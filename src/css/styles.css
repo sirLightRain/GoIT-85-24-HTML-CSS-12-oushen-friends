@@ -5,7 +5,7 @@
   |============================
 */
 @import url('./reset.css');
-/* @import url('./vite-promo.css'); */
+
 /* Так підключаємо header. Все інше за аналогією. */
 @import url('./header.css');
 /* Тут підключаємо HERO */
