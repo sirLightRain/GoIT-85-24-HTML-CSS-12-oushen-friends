@@ -8,6 +8,9 @@
 @import url('./vite-promo.css');
 /* Так підключаємо header. Все інше за аналогією. */
 @import url('./header.css');
+/* Тут підключаємо HERO */
+
+/* Тут підключаємо About us */
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
