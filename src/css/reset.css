@@ -43,3 +43,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.link {
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
