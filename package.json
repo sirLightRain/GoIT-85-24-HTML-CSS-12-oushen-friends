@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/GoIT-85-24-HTML-CSS-12-oushen-friends/",
     "preview": "vite preview"
   },
   "devDependencies": {
