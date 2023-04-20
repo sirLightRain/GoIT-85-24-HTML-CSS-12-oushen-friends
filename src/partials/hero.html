@@ -1,0 +1,44 @@
+<section>
+    <h1 class="hero-title">
+        Welcome to our collection of premium watches
+    </h1>
+    <!-- slider -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="class swiper-slide">
+                <img src="" alt="#" srcset="">
+            </div>
+            <div class="class swiper-slide">
+                <img src="" alt="#" srcset="">
+            </div>
+            <div class="class swiper-slide">
+                <img src="" alt="#" srcset="">
+            </div>
+            <div class="class swiper-slide">
+                <img src="" alt="#" srcset="">
+            </div>
+            <div class="class swiper-slide">
+                <img src="#" alt="#" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="class swiper-buttons">
+        <div class="class button-prev"></div>
+        <div class="class button-next"></div>
+    </div>
+    <!-- slider -->
+</section>
+<script>
+    const swiper = new Swiper(".mySwiper",{
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+            enabled: true,
+        },
+        navigation: {
+            nextEl: "button-next",
+            nextEl: "button-prev"
+        },
+    });
+</script>
