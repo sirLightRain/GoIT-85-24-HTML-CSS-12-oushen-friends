@@ -21,6 +21,34 @@
 
 /* Тут підключаємо footer */
 @import url('./footer.css');
+
+@font-face {
+  font-family: 'Epilogue-light';
+  src: url('../fonts/Epilogue-Light.woff2') format('woff2'),
+      url('../fonts/Epilogue-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue-regular';
+  src: url('../fonts/Epilogue-Regular.woff2') format('woff2'),
+      url('../fonts/Epilogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue-semibold';
+  src: url('../fonts/Epilogue-SemiBold.woff2') format('woff2'),
+      url('../fonts/Epilogue-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Кольори макету */
   --darck-color: #141414;

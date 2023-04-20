@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Epilogue';
+    src: url('Epilogue-Light.woff2') format('woff2'),
+        url('Epilogue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('Epilogue-Regular.woff2') format('woff2'),
+        url('Epilogue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('Epilogue-SemiBold.woff2') format('woff2'),
+        url('Epilogue-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
