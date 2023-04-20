@@ -8,3 +8,7 @@
     display: block;
     padding-top: 40px;
 }
+
+.social-list__icon {
+    fill: green;
+}
