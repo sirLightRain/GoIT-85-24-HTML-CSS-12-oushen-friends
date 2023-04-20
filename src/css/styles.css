@@ -22,11 +22,11 @@
 /* Тут підключаємо footer */
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Epilogue, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  
+
   /* Кольори макету */
   --darck-color: #141414;
   --light-color: #FFFFFF;
