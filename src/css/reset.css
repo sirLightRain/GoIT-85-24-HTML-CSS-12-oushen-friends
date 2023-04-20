@@ -56,7 +56,7 @@ img {
 /* --- Mobile container ---- */
 @media  screen and (min-width: 375px) {
   .container {
-      width: 375px;
+      width: 335px;
       padding-left: 20px;
       padding-right: 20px;
       margin-left: auto;
@@ -66,7 +66,7 @@ img {
 /* --- Planshet container ---- */
 @media  screen and (min-width: 768px) {
   .container {
-      width: 768px;
+      width: 704px;
       padding-left: 15px;
       padding-right: 15px;
   }
