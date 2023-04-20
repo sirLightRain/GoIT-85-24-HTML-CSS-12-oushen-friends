@@ -26,10 +26,14 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  
   /* Кольори макету */
   --darck-color: #141414;
   --light-color: #FFFFFF;
   --darck-green: #1E2827;
+
+  /* Змінна для підключення анімації */
+  --transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
   font-synthesis: none;
