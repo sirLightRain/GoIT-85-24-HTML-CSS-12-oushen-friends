@@ -1,0 +1,10 @@
+.footer {
+    /* display: flex; */
+    background-color: var(--darck-green);
+    color: var(--light-color);
+}
+
+.footer-logo-adress-block {
+    display: block;
+    padding-top: 40px;
+}

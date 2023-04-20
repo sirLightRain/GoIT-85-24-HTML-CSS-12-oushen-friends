@@ -20,7 +20,7 @@
 /* Тут підключаємо Sale */
 
 /* Тут підключаємо footer */
-
+@import url('./footer.css');
 :root {
   /* Кольори макету */
   --darck-color: #141414;
