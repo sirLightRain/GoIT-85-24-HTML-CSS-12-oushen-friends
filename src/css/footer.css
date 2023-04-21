@@ -90,6 +90,15 @@
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+
+    
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color var(--transition-var);
+}
+
+.social-list-item:focus,
+.social-list-item:hover {
+    border-color: var(--light-color);
+    background-color: teal;
 }
 
 .social-list-link {
@@ -101,14 +110,10 @@
 
     background-repeat: no-repeat;
     background-position: center center;
-
-    transition: border-color var(--transition-var);
 }
 
-.social-list-item:focus,
-.social-list-item:hover {
-    border-color: var(--light-color);
-}
+
+
 /* === Зробити додаткову анімацію === */
 /* .social-list-item:focus .social-list-icon,
 .social-list-item:hover .social-list-icon {
