@@ -40,7 +40,6 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -60,7 +59,7 @@ body {
 /* --- Mobile container ---- */
 @media  screen and (min-width: 375px) {
   .container {
-      width: 335px;
+      width: 375px;
       padding-left: 20px;
       padding-right: 20px;
       margin-left: auto;
@@ -70,14 +69,16 @@ body {
 /* --- Planshet container ---- */
 @media  screen and (min-width: 768px) {
   .container {
-      width: 704px;
-      padding-left: 15px;
-      padding-right: 15px;
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
   }
 }
 /* --- Desctop container ---- */
-@media  screen and (min-width: 1440px) {
+@media  screen and (min-width: 1280px) {
   .container {
-      width: 1176px;
+      width: 1280px;
+      padding-left: 52px;
+      padding-right: 52px;
   }
 }
