@@ -1,32 +1,83 @@
-<section>
+<section class="container">
     <h1 class="hero-title">
         Welcome to our collection of premium watches
-    </h1>
-    <!-- slider -->
+     </h1>
+     <!-- slider -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="class swiper-slide">
-                <img src="" alt="#" srcset="">
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="../img/main-tabl-image-slider.jpg 1x, ./img/main-tabl-image-slider@2x.jpg 2x"
+                    media="(min-width:1280px)"/>
+                    <source srcset="../img/main-tabl-image-slider.jpg 1x, ./img/main-tabl-image-slider@2x.jpg 2x"
+                        media="(min-width:768px)" />
+                    <source srcset="../img/main-mobile-image-slider.jpg 1x, ./img/main-mobile-image-slider.jpg@2x.jpg 2x"
+                        media="(max-width:767px)" />
+
+                    <img src="./img/main-mobile-image-slider.jpg" alt="swiper-image" width="266" height="200">
+                </picture>
             </div>
-            <div class="class swiper-slide">
-                <img src="" alt="#" srcset="">
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="../img/tabl-slider-image2.jpg 1x, ./img/tabl-slider-image2@2x.jpg 2x"
+                        media="(min-width:1280px)" />
+                    <source srcset="../img/tabl-slider-image2.jpg 1x, ./img/tabl-slider-image2@2x.jpg 2x"
+                        media="(min-width:768px)" />
+                    <source srcset="../mobile-slider-image2.jpg 1x, ./img/mobile-slider-image2@2x.jpg 2x"
+                        media="(max-width:767px)" />
+
+                    <img src="../img/mobile-slider-image2.jpg" alt="swiper-image" width="266" height="200">
+                </picture>
             </div>
-            <div class="class swiper-slide">
-                <img src="" alt="#" srcset="">
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="../img/tabl-slider-image3.jpg 1x, ./img/tabl-slider-image3@2x.jpg 2x"
+                        media="(min-width:1280px)" />
+                    <source srcset="../img/tabl-slider-image3.jpg 1x, ./img/tabl-slider-image3@2x.jpg 2x"
+                        media="(min-width:768px)" />
+                    <source srcset="../img/mobile-slider-image3.jpg 1x, ./img/mobile-slider-image-slider3@2x.jpg 2x"
+                        media="(max-width:767px)" />
+
+                    <img src="../img/mobile-slider-image3.jpg" alt="swiper-image" width="266" height="200">
+                </picture>
             </div>
-            <div class="class swiper-slide">
-                <img src="" alt="#" srcset="">
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="../img/tabl-slider-image4.jpg 1x, ./img/tabl-slider-image4@2x.jpg 2x"
+                        media="(min-width:1280px)" />
+                    <source srcset="./img/tabl-slider-image4.jpg 1x, ./img/tabl-slider-image4@2x.jpg 2x"
+                        media="(min-width:768px)" />
+                    <source srcset="./img/mobile-slider-image4.jpg.jpg 1x, ./img/mobile-slider-image4@2x.jpg 2x"
+                        media="(max-width:767px)" />
+
+                    <img src="../img/mobile-slider-image4.jpg" alt="swiper-image" width="266" height="200">
+                </picture>
             </div>
-            <div class="class swiper-slide">
-                <img src="#" alt="#" srcset="">
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="./img/tabl-slider-image5.jpg 1x, ./img/tabl-slider-image5@2x.jpg 2x"
+                        media="(min-width:1280px)" />
+                    <source srcset="./img/tabl-slider-image5.jpg 1x, ./img/tabl-slider-image5@2x.jpg 2x"
+                        media="(min-width:768px)" />
+                    <source srcset="./img/mobile-slider-image5.jpg 1x, ./img/mobile-slider-image5@2x.jpg 2x"
+                        media="(max-width:767px)" />
+
+                    <img src="./img/mobile-slider-image5.jpg" alt="swiper-image" width="266" height="200">
+                </picture>
             </div>
         </div>
     </div>
-    <div class="class swiper-buttons">
+    <div class="swiper-buttons">
         <div class="class button-prev"></div>
         <div class="class button-next"></div>
     </div>
     <!-- slider -->
+    <p class="hero-text">
+        Our watches are not just timepieces, but also an expression of
+        your personality and lifestyle. From classic designs to
+        modern ones, we have a watch to suit every taste and occasion.
+    </p>
+    <img src="./img/mobile-hero (1).jpg" alt="main-hero-image" srcset="" width="335" height="410">
 </section>
 <script>
     const swiper = new Swiper(".mySwiper",{

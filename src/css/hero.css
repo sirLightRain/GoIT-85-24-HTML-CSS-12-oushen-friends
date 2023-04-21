@@ -1,0 +1,32 @@
+.container {
+    max-width: 335px;
+    padding-top: 122px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    margin: 0 auto;
+    background-color: var(--darck-color);
+}
+.hero-title {
+    font-family: 'Epilogue-semibold';
+    font-family: sans-serif;
+    margin-bottom: 60px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--light-color);
+}
+.hero-text {
+    font-family: 'Epilogue-light';
+    font-family: sans-serif;
+    max-width: 248px;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: var(--light-color);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
