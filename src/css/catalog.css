@@ -10,6 +10,7 @@
     margin-bottom: 40px;
 }
 
+/* заголовок секции комп версия  */
 @media screen and (min-width: 1440px) {
     .section-title {
         font-size: 40px;
@@ -18,13 +19,32 @@
     }
 }
 
+/* список с часами  */
 .catalog_list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0;
     padding: 0;
     gap: 40px 32px;
+}
+
+@media screen and (max-width: 1440px) {
+.catalog_list {
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .catalog_list{
+        margin-left: -24px;
+        gap: 0;
+    }
+     .catalog_list>.item{
+        width: calc((100% / 4) - 24px);
+        margin-left: 24px;
+        margin-bottom: 82px;
+     }
 }
 
 .catalog_list > .item{
@@ -32,10 +52,11 @@
     width: 276px;
 }
 
+/* выезжающий текст */
 .overlay_text{
-    width: 276px;
-    height: 325px;
+    width: 100%;
     background-color: var(--dark-green);
+    padding: 40px 60px 40px 40px;
 }
 
 .overlay_text > .overlay_text_topic{
@@ -44,6 +65,32 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+}
+
+.overlay_text > .overlay_text_characteristic{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+}
+
+.overlay_text_characteristic.first{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.overlay_text_characteristic.last{
+    width: 100%;
+}
+
+/* выезжающий текст комп версия */
+@media screen and (min-width: 1440px) {
+ .overlay_text{
+    width: 276px;
+    height: 325px;
+    padding: 20px;
+ }
 }
 
 
@@ -66,6 +113,6 @@
 
 @media screen and (min-width: 1440px) {
     .btn_buy_now {
-        margin-top: 80px;
+        margin-top: 0;
     }
 }
