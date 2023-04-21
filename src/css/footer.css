@@ -39,14 +39,15 @@
 
 .footer-tel {
     display: block;
-    padding-top: 40px;
-
+    /* padding-top: 40px; */
+    margin-top: 40px;
     text-transform: uppercase;
 }
 
 .footer-adress {
     display: block;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    margin-top: 20px;
 
     letter-spacing: -0.02em;
 }
@@ -67,7 +68,8 @@
 }
 
 .footer-navigation-item + .footer-navigation-item {
-    padding-top: 14px;
+    /* padding-top: 14px; */
+    margin-top: 14px;
 }
 
 /* === Social link block === */
@@ -90,7 +92,9 @@
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+    /* transition: border-color var(--transition-var), transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
 
 .social-list-link {
     display: flex;
@@ -102,18 +106,16 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    transition: border-color var(--transition-var);
+    /* transition: border-color var(--transition-var); */
+   
 }
 
-.social-list-item:focus,
-.social-list-item:hover {
-    border-color: var(--light-color);
-}
 /* === Зробити додаткову анімацію === */
 /* .social-list-item:focus .social-list-icon,
 .social-list-item:hover .social-list-icon {
-    fill: tomato;
+    fill: #fcfbca;
 } */
+
 
 .social-list-icon {
     fill: #fff;
@@ -159,6 +161,28 @@
         line-height: 1.33;
     }
 
+    .footer-tel{
+        transition: transform var(--transition-var);
+    }
+
+    .footer-tel:hover,
+    .footer-tel:focus
+    {
+        transform: scale(1.15);
+    }
+
+    .footer-adress{
+        transition: transform var(--transition-var);
+    }
+
+    .footer-adress:hover{
+        transform: scale(1.15);
+    }
+
+    .footer-adress:focus{
+        transform: scale(1.15);
+    }
+
     .footer-navigation-block {
         padding-top: 0px;
         padding-left: 142px;
@@ -175,6 +199,15 @@
     }
 
 
+    .footer-navigation-item{
+        transition:  transform var(--transition-var);
+    }
+
+    .footer-navigation-item:hover,
+    .footer-navigation-item:focus{
+        transform: scale(1.25);
+    }
+
     .social-list {
         gap: 16px;
     }
@@ -182,11 +215,19 @@
     .social-list-item {
         width: 44px;
         height: 44px;
+        transition: border-color var(--transition-var), transform var(--transition-var);
+    }
+
+    .social-list-item:focus,
+    .social-list-item:hover {
+        border-color: var(--light-color);
+        transform: scale(1.25);
     }
 
     .social-list-link {
         width: 28px;
         height: 28px;
+        /* transition: transform var(--transition-var), border-color var(--transition-var); */
     }
 
     .footer-all-rights-reserwed {
@@ -203,4 +244,11 @@
         padding-top: 0;
         gap: 18px;
     }
+}
+
+@media screen and (min-width: 1440px) {
+   .footer-navigation-block{
+    padding-left: 0;
+    margin-left: 355px;
+   }
 }
