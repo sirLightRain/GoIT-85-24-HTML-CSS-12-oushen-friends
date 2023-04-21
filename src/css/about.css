@@ -1,0 +1,37 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-title {
+  font-family: 'Epilogue-semibold';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--dark-green);
+  margin-bottom: 40px;
+}
+
+.about-text {
+  font-family: 'Epilogue-light';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+.about-wraper {
+  margin-bottom: 40px;
+}
+
+.about-gif {
+  width: 335px;
+  height: 365px;
+}
+
+.about-clock {
+  height: 100%;
+  background-size: cover;
+}
