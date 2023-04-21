@@ -80,6 +80,9 @@
 .overlay_text_characteristic.last{
     width: 100%;
 }
+pre{
+    font: inherit
+}
 
 /* выезжающий текст комп версия */
 @media screen and (min-width: 1440px) {
