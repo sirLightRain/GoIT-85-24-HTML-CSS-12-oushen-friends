@@ -23,10 +23,28 @@
 .catalog_list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0;
     padding: 0;
     gap: 40px 32px;
+}
+
+@media screen and (max-width: 1440px) {
+.catalog_list {
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .catalog_list{
+        margin-left: -24px;
+        gap: 0;
+    }
+     .catalog_list>.item{
+        width: calc((100% / 4) - 24px);
+        margin-left: 24px;
+        margin-bottom: 82px;
+     }
 }
 
 .catalog_list > .item{
@@ -95,6 +113,6 @@
 
 @media screen and (min-width: 1440px) {
     .btn_buy_now {
-        margin-top: 80px;
+        margin-top: 0;
     }
 }
