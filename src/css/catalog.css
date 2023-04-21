@@ -16,6 +16,8 @@
     }
 }
 
+
+
 /* список с часами  */
 .catalog_list{
     display: flex;
@@ -29,6 +31,10 @@
 @media screen and (max-width: 1440px) {
 .catalog_list {
     justify-content: center;
+}
+.catalog_list>.item {
+
+    width: 276px;
 }
 }
 
