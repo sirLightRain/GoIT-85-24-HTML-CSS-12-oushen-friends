@@ -12,20 +12,50 @@
     display: block;
     width: 200px;
     padding-top: 40px;
+
+    font-family: 'Epilogue-Regular';
+    /* font-style: normal; */
+    /* font-weight: 900; */
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: var(--light-color);
 }
 
 .footer-tel {
     display: block;
     padding-top: 40px;
+
+    text-transform: uppercase;
 }
 
 .footer-adress {
     display: block;
     padding-top: 20px;
+
+    letter-spacing: -0.02em;
 }
 
 .footer__navigation-block {
     display: block;
+
+    font-family: 'Epilogue-Regular';
+    /* font-style: normal; */
+    /* font-weight: 900; */
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--light-color);
+}
+
+.footer-navigation-item + .footer-navigation-item {
+    padding-top: 14px;
+}
+
+.social-list {
+    display: flex;
 }
 
 .social-list__icon {
