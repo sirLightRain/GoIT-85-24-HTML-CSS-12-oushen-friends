@@ -60,7 +60,7 @@ body {
 /* --- Mobile container ---- */
 @media  screen and (min-width: 375px) {
   .container {
-      width: 335px;
+      width: 375px;
       padding-left: 20px;
       padding-right: 20px;
       margin-left: auto;
@@ -70,7 +70,7 @@ body {
 /* --- Planshet container ---- */
 @media  screen and (min-width: 768px) {
   .container {
-      width: 704px;
+      width: 734px;
       padding-left: 15px;
       padding-right: 15px;
   }
@@ -78,6 +78,6 @@ body {
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1440px) {
   .container {
-      width: 1176px;
+      width: 1206px;
   }
 }
