@@ -78,6 +78,6 @@ body {
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1440px) {
   .container {
-      width: 1216px;
+      width: 1206px;
   }
 }
