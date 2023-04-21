@@ -4,11 +4,30 @@
     color: var(--light-color);
 }
 
-.footer-logo-adress-block {
+.footer__block {
+    display: block;
+}
+
+.footer__logo-adress-block {
+    display: block;
+    width: 200px;
+    padding-top: 40px;
+}
+
+.footer-tel {
     display: block;
     padding-top: 40px;
 }
 
+.footer-adress {
+    display: block;
+    padding-top: 20px;
+}
+
+.footer__navigation-block {
+    display: block;
+}
+
 .social-list__icon {
-    fill: green;
+    fill: #fff;
 }
