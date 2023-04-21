@@ -3,16 +3,16 @@
     <div class="modal">
         <div class="modal-container">
             <button type="button" class="modal-close-btn">
-                <svg class="modal-close-btn-icon" width="10" height="10">
-                    <use href="/src/img/sprite.svg#icon-close"></use>
+                <svg class="modal-close-btn-icon" width="20" height="20">
+                    <use href="/src/img/sprite.svg#icon-close-btn-converted"></use>
                 </svg>
             </button>
 
-            <div>
+            <div class="modal-selected-product">
                 <img class="modal-img" src="/src/img/img_modal.jpg" srcset="/src/img/img_modal@2x.jpg 2x"
-                    alt="Image of selected watch" width="276">
-                <span class="modal-decr-watch">Tube Watch S42 Date Steel With Black...</span>
-                <span class="modal-decr-price">€395</span>
+                    alt="Image of selected watch" width="276" height="325">
+                <p class="modal-decr-watch">Tube Watch S42 Date Steel With Black...</p>
+                <p class="modal-decr-price">€395</p>
             </div>
 
             <form class="modal-form">
@@ -29,7 +29,8 @@
                     <span class="modal-form-decr">Email</span>
                     <span class="modal-form-field">
                         <input type="email" class="modal-form-input" placeholder="Enter your email" name="user_email"
-                            required>
+                            required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                            title="example@gmail.com">
                     </span>
                 </label>
 
@@ -41,14 +42,14 @@
                     </span>
                 </label>
 
-                <label class="modal-label">
+                <label class="modal-label-comments">
                     <span class="modal-form-decr">Comments</span>
                     <textarea name="user_comments" class="modal-form-comments" placeholder="Enter your text"></textarea>
                 </label>
                 <button type="submit" class="modal-form-btn">SUBMIT</button>
-                <span class="modal-form-info-text">By clicking on “Send message” button, you agree to our Privacy
-                    Policy,
-                    and allow Promodo to use this information for marketing purposes.</span>
+                <span class="modal-form-info-text">By clicking on “Send message” button, you agree to our <a href=""
+                        class="privacy-link">Privacy Policy</a>, and allow Promodo to use this information for marketing
+                    purposes.</span>
             </form>
         </div>
     </div>
