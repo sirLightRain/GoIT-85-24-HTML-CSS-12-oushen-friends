@@ -69,7 +69,7 @@ body {
 /* --- Planshet container ---- */
 @media  screen and (min-width: 768px) {
   .container {
-      width: 704px;
+      width: 768px;
       padding-left: 32px;
       padding-right: 32px;
   }
@@ -77,6 +77,8 @@ body {
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1280px) {
   .container {
-      width: 1206px;
+      width: 1440px;
+      padding-left: 132px;
+      padding-right: 132px;
   }
 }
