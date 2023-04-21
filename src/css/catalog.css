@@ -110,7 +110,7 @@ pre{
  }
 
  .watch-price{
-font-weight: 400;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
@@ -121,10 +121,15 @@ font-weight: 400;
 
 
 /* кнопка "BUY NOW" */
+.button_area{
+text-align: end;
+}
+
 .btn_buy_now {
     width: 108px;
     height: 42px;
     border-radius: 8px;
+    display: inline-block;
     background-color: var(--dark-green);
     color: var(--light-color);
     font-weight: 400;
@@ -133,6 +138,8 @@ font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     margin-top: 40px;
+    border: none;
+    margin-bottom: 26px;
 }
 
 @media screen and (min-width: 1280px) {
