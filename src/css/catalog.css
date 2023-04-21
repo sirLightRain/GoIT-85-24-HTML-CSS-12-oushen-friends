@@ -1,6 +1,5 @@
-.list {
-    list-style: none;
-}
+
+
 
 /* заголовок секции */
 .section-title {
@@ -19,13 +18,32 @@
     }
 }
 
-.catalog_list.list {
+.catalog_list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     padding: 0;
     gap: 40px 32px;
+}
+
+.catalog_list > .item{
+    outline: 1px solid teal;
+    width: 276px;
+}
+
+.overlay_text{
+    width: 276px;
+    height: 325px;
+    background-color: var(--dark-green);
+}
+
+.overlay_text > .overlay_text_topic{
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 
