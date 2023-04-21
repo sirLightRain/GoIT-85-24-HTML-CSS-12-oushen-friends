@@ -90,6 +90,24 @@
  }
 }
 
+/* WATCH NAME  */
+ .watch-name{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+    margin-top: 14px;
+ }
+
+ .watch-price{
+font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-top: 4px;
+ }
 
 
 
