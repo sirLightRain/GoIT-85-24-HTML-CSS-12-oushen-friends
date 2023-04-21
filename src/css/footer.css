@@ -10,22 +10,27 @@
 }
 
 /* === Logo === */
-.logo-link {
+.footer-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* .logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-}
-/*  */
+} */
+
+/* === Adress block === */
 .footer-logo-adress-block {
     display: block;
-    width: 200px;
+    /* width: 200px; */
     padding-top: 40px;
 
     font-family: 'Epilogue-Regular';
-    /* font-style: normal; */
-    /* font-weight: 900; */
+
     font-size: 14px;
     line-height: 1.29;
 
@@ -52,8 +57,7 @@
     margin-left: auto;
 
     font-family: 'Epilogue-Regular';
-    /* font-style: normal; */
-    /* font-weight: 900; */
+    
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
@@ -66,7 +70,7 @@
     padding-top: 14px;
 }
 
-/* === Social block === */
+/* === Social link block === */
 .footer-social-block {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -90,15 +94,13 @@
 
 .social-list-link {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
-    /* border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px; */
+
     background-repeat: no-repeat;
     background-position: center center;
-
-    /* background-size: 24px 24px; */
 
     transition: border-color var(--transition-var);
 }
@@ -107,7 +109,7 @@
 .social-list-item:hover {
     border-color: var(--light-color);
 }
-
+/* === Зробити додаткову анімацію === */
 /* .social-list-item:focus .social-list-icon,
 .social-list-item:hover .social-list-icon {
     fill: tomato;
@@ -117,19 +119,13 @@
     fill: #fff;
 }
 
-/* .facebook {
-    width: 24px;
-    height: 24px;
-} */
-
 /* === footer-all-rights-reserwed === */
 .footer-all-rights-reserwed {
     display: block;
     padding-bottom: 20px;
 
     font-family: 'Epilogue-Regular';
-    /* font-style: normal; */
-    /* font-weight: 900; */
+    
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
@@ -143,4 +139,68 @@
     display: flex;
     gap: 14px;
     padding-top: 14px;
+}
+/* === Точка перелому на таблет 768 === */
+@media screen and (min-width: 768px) {
+    .footer-block {
+        
+        padding-top: 80px;
+        padding-bottom: 152px;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-logo-adress-block {
+        padding-top: 0px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .footer-navigation-block {
+        padding-top: 0px;
+        padding-left: 142px;
+        margin-left: 0px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .footer-social-block {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: auto;
+        /* padding-left: 142px; */
+    }
+
+
+    .social-list {
+        gap: 16px;
+    }
+
+    .social-list-item {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-list-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-all-rights-reserwed {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .footer-all-rights-reserwed {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-all-rights-reserwed-menu {
+        padding-top: 0;
+        gap: 18px;
+    }
 }
