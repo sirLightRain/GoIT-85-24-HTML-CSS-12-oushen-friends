@@ -29,9 +29,14 @@
 .about-gif {
   width: 335px;
   height: 365px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-clock {
   height: 100%;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
