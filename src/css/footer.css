@@ -56,8 +56,27 @@
 
 .social-list {
     display: flex;
+    justify-content: left;
+    gap: 14px;
 }
 
-.social-list__icon {
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+
+    transition: border-color var(--transition-var);
+}
+
+.social-list-link:focus,
+.social-list-link:hover {
+    border-color: var(--light-color);
+}
+
+.social-list-icon {
     fill: #fff;
 }
