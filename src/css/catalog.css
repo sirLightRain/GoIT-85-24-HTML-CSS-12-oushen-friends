@@ -1,0 +1,71 @@
+
+
+
+/* заголовок секции */
+.section-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+    .section-title {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 64px;
+    }
+}
+
+.catalog_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 40px 32px;
+}
+
+.catalog_list > .item{
+    outline: 1px solid teal;
+    width: 276px;
+}
+
+.overlay_text{
+    width: 276px;
+    height: 325px;
+    background-color: var(--dark-green);
+}
+
+.overlay_text > .overlay_text_topic{
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+
+
+
+/* кнопка "BUY NOW" */
+.btn_buy_now {
+    width: 108px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: var(--dark-green);
+    color: var(--light-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+    .btn_buy_now {
+        margin-top: 80px;
+    }
+}
