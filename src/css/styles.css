@@ -66,13 +66,3 @@
 
 /* ====================* Опис основних форматів шрифту! *==================== */
 /* --- Hero ---- */
-.hero-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1.03;
-
-  letter-spacing: -0.04em;
-
-  /* color: var(--light-color); */
-}
