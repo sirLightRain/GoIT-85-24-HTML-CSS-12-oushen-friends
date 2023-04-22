@@ -1,169 +1,196 @@
 /* заголовок секции */
 .section-title {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
 }
 
 /* заголовок секции комп версия  */
 @media screen and (min-width: 1280px) {
-    .section-title {
-        font-size: 40px;
-        line-height: 1.1;
-        margin-bottom: 64px;
-    }
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 64px;
+  }
 }
 
-
-
 /* список с часами  */
-.catalog_list{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    margin: 0;
-    padding: 0;
-    gap: 40px;
+.catalog_list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.catalog_list-link {
+  display: block;
+}
+
+.catalog_list-link:hover .overlay_text,
+.catalog_list-link:focus .overlay_text {
+  transform: translate(0px, 0px);
 }
 
 @media screen and (min-width: 768px) {
-    .catalog_list{
-        gap: 40px 32px;
-    }
+  .catalog_list {
+    gap: 40px 32px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
-.catalog_list {
+  .catalog_list {
     justify-content: center;
-}
-.catalog_list>.item {
-
+  }
+  .catalog_list > .item {
     width: 276px;
-}
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .catalog_list{
-        margin-left: -24px;
-        gap: 0;
-    }
-     .catalog_list>.item{
-        width: calc((100% / 4) - 24px);
-        margin-left: 24px;
-        margin-bottom: 82px;
-     }
+  .catalog_list {
+    margin-left: -24px;
+    gap: 0;
+  }
+  .catalog_list > .item {
+    width: calc((100% / 4) - 24px);
+    margin-left: 24px;
+    margin-bottom: 82px;
+  }
 }
 
-.catalog_list > .item{
-    /* outline: 1px solid teal; */
-    width: 276px;
+.catalog_list > .item {
+  /* outline: 1px solid teal; */
+  width: 276px;
 }
-
 
 /* выезжающий текст */
-.overlay_text{
-    width: 100%;
-    background-color: var(--dark-green);
-    padding: 40px 60px 40px 40px;
+.item {
+}
+.item-wraper {
+  position: relative;
+  overflow: hidden;
+}
+.overlay_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-green);
+  border-radius: 8px;
+  padding: 20px;
+  transform: translate(0, 100%);
+  transition: transform 250ms linear;
+  overflow-y: scroll;
 }
 
-.overlay_text > .overlay_text_topic{
-    color: var(--light-color);
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
+.overlay_text_topic {
+  font-family: 'Epilogue';
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
-.overlay_text > .overlay_text_characteristic{
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.01em;
-    color: rgba(255, 255, 255, 0.5);
-    margin-top: 10px;
+.overlay_text > .overlay_text_topic {
+  color: var(--light-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
-.overlay_text_characteristic.first{
-    width: 100%;
-    margin-bottom: 20px;
+.overlay_text > .overlay_text_characteristic {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.overlay_text_characteristic.last{
-    width: 100%;
+.overlay_text_characteristic.first {
+  width: 100%;
+  margin-bottom: 20px;
 }
-pre{
-    font: inherit
+
+.overlay_text_characteristic.last {
+  width: 100%;
+}
+pre {
+  font: inherit;
 }
 
 /* выезжающий текст комп версия */
 @media screen and (min-width: 1280px) {
- .overlay_text{
+  .overlay_text {
     width: 276px;
     height: 325px;
     padding: 20px;
- }
+  }
 }
 
 /* AREA PRICE AND NAME */
-.area_name_and_price{
-    margin-top: 14px;
+.area_name_and_price {
+  margin-top: 14px;
 }
 
 /* WATCH NAME  */
- .watch-name{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: var(--dark-color);
- }
+.watch-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--dark-color);
+}
 
 /* PRICE */
- .watch-price{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: rgba(20, 20, 20, 0.5);
-    margin-top: 4px;
- }
-
-
+.watch-price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+  margin-top: 4px;
+}
 
 /* кнопка "BUY NOW" */
-.button_area{
-text-align: end;
+.button_area {
+  text-align: end;
 }
 
 .btn_buy_now {
-    width: 108px;
-    height: 42px;
-    border-radius: 8px;
-    display: inline-block;
-    background-color: var(--dark-green);
-    color: var(--light-color);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 40px;
-    border: transparent;
-    margin-bottom: 26px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 108px;
+  height: 42px;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: var(--dark-green);
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border: transparent;
+  margin-bottom: 26px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn_buy_now:hover, .btn_buy_now:focus{
-    border: 1px solid #FFFFFF;
+.btn_buy_now:hover,
+.btn_buy_now:focus {
+  border: 1px solid #ffffff;
 }
 
 @media screen and (min-width: 1280px) {
-    .btn_buy_now {
-        width:  122px;
-        height: 50px;
-        margin-top: 0;
-        border-radius: 8px;
-    }
+  .btn_buy_now {
+    width: 122px;
+    height: 50px;
+    margin-top: 0;
+    border-radius: 8px;
+  }
 }
