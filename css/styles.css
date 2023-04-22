@@ -1,0 +1,195 @@
+:root { 
+    --transition-duration: 250ms;
+    --trsition-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --darck-color: #141414;
+    --light-color: #FFFFFF;
+    --darck-green: #1E2827;
+} 
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: var(--darck-color);
+}
+.container {
+    width: 1440px;
+    padding: 0 147px; /*132px+15px*/
+    margin: 0 auto;
+}
+.list {
+    list-style-type: none;
+}
+.link {
+    text-decoration: none;
+}
+
+/*-----------------Adaptive-IMG--------------------*/
+/*-----------------Sale-IMG--------------------*/
+@media screen and (min-width: 480px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+       screen and (min-resolution: 192dpi) and (max-width: 767px),
+       screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+       screen and (min-resolution: 192dpi) and (max-width: 1199px),
+       screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1.jpg);;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
+       screen and (min-resolution: 192dpi) and (max-width: 1440px),
+       screen and (min-resolution: 2dppx) and (max-width: 1440px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1.jpg);
+    }
+}
+/*-----------------Sale-IMG--------------------*/
+/*-----------------Adaptive-IMG--------------------*/
+
+/*-----------------------------------------Sale--------------------------------------------------*/
+.sale {
+    padding: 80px 0 160px 0;
+}
+.sale-flex-elements {
+    display: flex;
+    justify-content: center;
+    width: 1176px;
+    gap: 40px;
+}
+.sale-flex-elements-img {
+    display: flex;
+    gap: 20px;
+}
+.sale-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #1E2827;
+    margin-bottom: 80px;
+}
+.sale-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sale-list-1 {
+    
+}
+.sale-img-clock-1 {
+    background-image: url(../img/clock-1.jpg);
+    /* background: #141414; */
+    width: 146px;
+    height: 146px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sale-subtitle {
+    width: 369px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #141414;
+    margin-bottom: 8px;
+}
+.sale-subtitle-item {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-bottom: 16px;
+}
+.sale-list-700_1000 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.sale-subtitle-700 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #141414;
+}
+.sale-subtitle-item-1000 {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    text-decoration-line: line-through;
+    color: rgba(20, 20, 20, 0.5);
+}
+.sale-info-clock {
+    
+}
+.sale-info-clock-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 17px;
+}
+.sale-info-clock-text-1 {
+    width: 396px;
+    height: 126px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-bottom: 20px;
+}
+.sale-info-clock-item {
+
+}
+.sale-info-clock-text-2 {
+    width: 162px;
+    height: 143px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+
+/*-----------------------------------------Sale--------------------------------------------------*/

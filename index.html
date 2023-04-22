@@ -5,46 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desctop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <div>
-        <h2>Sale</h2>
-        <div>
-            <ul>
+    <main>
+        <!---------------------------------------Sale-------------------------------------------------->
+    <section class="sale">
+        <div class="container">
+        <h2 class="sale-title">Sale</h2>
+        <div class="sale-flex-elements">
+        <div class="sale-flex-elements-img">
+            <ul class="sale-list list">
                 <li>
-                    <img src="">
+                    <img
+                    class="sale-img-clock-1"
+                    width="102" height="154">
                 </li>
                 <li>
-                    <img src="">
+                    <img
+                    srcset="./img/clock-2.jpg 1x, ./img/clock-2x2.jpg 2x"
+                    src="./img/clock-2.jpg" 
+                    alt="clock-2" 
+                    width="146" height="146">
                 </li>
                 <li>
-                    <img src="">
+                    <img
+                    srcset="./img/clock-3.jpg 1x, ./img/clock-3x2.jpg 2x"
+                    src="./img/clock-3.jpg" 
+                    alt="clock-3" 
+                    width="146" height="146">
                 </li>
                 <li>
-                    <img src="">
+                    <img
+                    srcset="./img/clock-4.jpg 1x, ./img/clock-4x2.jpg 2x"
+                    src="./img/clock-4.jpg" 
+                    alt="clock-4" 
+                    width="146" height="146">
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <img src="">
+            <ul class="sale-list-1">
+                <li class="list">
+                    <img
+                    srcset="./img/clock-5.jpg 1x, ./img/clock-5x2.jpg 2x"
+                    src="./img/clock-5.jpg" 
+                    alt="clock-5" 
+                    width="406" height="614">
                 </li>
             </ul>
         </div>
         <div>
-        <h3>Greenlane Watch By 
+        <h3 class="sale-subtitle">Greenlane Watch By 
             Police For MenHT</h3>
-            <p>Product tag: PEWJK2227003</p>
-            <h3>€700</h3>
-            <p>€700</p>
-            <ul>
-                <li>
-                    <h3>Description</h3>
-                    <p>Richly detailed with an understated design - the Police Men’s Greenlane watch features a versatile multifunction design that fits effortlessly into work and play. The steel case is adorned with a semi-transparent black dial. The timepiece exhibits a contrast through a black IP bracelet with matching crown and pushers.</p>
+            <p class="sale-subtitle-item">Product tag: PEWJK2227003</p>
+            <ul class="sale-list-700_1000 list">
+                <li><h3 class="sale-subtitle-700">€700</h3></li>
+                <li><p class="sale-subtitle-item-1000">€1000</p></li>
+            </ul>
+            <ul class="sale-info-clock list">
+                <li class="sale-info-clock-item">
+                    <h3 class="sale-info-clock-title">Description</h3>
+                    <p class="sale-info-clock-text-1">Richly detailed with an understated design - the Police Men’s Greenlane watch features a versatile multifunction design that fits effortlessly into work and play. The steel case is adorned with a semi-transparent black dial. The timepiece exhibits a contrast through a black IP bracelet with matching crown and pushers.</p>
                 </li>
-                <li>
-                    <h3>DETAILS & FEATUREStion</h3>
-                    <p>Gender: man
+                <li class="sale-info-clock-item">
+                    <h3 class="sale-info-clock-title">DETAILS & FEATUREStion</h3>
+                    <p class="sale-info-clock-text-2">Gender: man
                         Size: 46x54.5mm
                         Case Colour: Steel
                         Band Material: Metal
@@ -56,6 +86,9 @@
             </ul>
         </div>
     </div>
+</div>
     </section>
+    <!---------------------------------------Sale-------------------------------------------------->
+    </main>
 </body>
 </html>
