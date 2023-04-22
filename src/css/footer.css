@@ -1,5 +1,4 @@
 .footer {
-    /* display: flex; */
     background-color: var(--dark-green);
     color: var(--light-color);
 }
@@ -14,14 +13,6 @@
     width: 40px;
     height: 40px;
 }
-
-/* .logo-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-} */
 
 /* === Adress block === */
 .footer-logo-adress-block {
@@ -112,14 +103,6 @@
     background-position: center center;
 }
 
-
-
-/* === Зробити додаткову анімацію === */
-/* .social-list-item:focus .social-list-icon,
-.social-list-item:hover .social-list-icon {
-    fill: tomato;
-} */
-
 .social-list-icon {
     fill: #fff;
 }
@@ -176,9 +159,7 @@
         padding-top: 0;
         padding-bottom: 0;
         margin-left: auto;
-        /* padding-left: 142px; */
     }
-
 
     .social-list {
         gap: 16px;
