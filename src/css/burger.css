@@ -25,6 +25,10 @@
     padding: 29px 20px 30px 20px;
   }
 
+  .logo {
+    z-index: 1000;
+  }
+
   .page-header-mobile {
     display: flex;
     align-items: center;
@@ -32,11 +36,11 @@
   }
 
   .header-text {
-    font-family: 'Epilogue';
+    font-family: 'Epilogue-regular';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 1;
     letter-spacing: -0.03em;
 
     color: #ffffff;
@@ -55,7 +59,7 @@
     right: 20px;
     background-color: transparent;
     border: none;
-    padding: 0;
+    /* padding: 0; */
     line-height: 0;
   }
 
@@ -72,10 +76,12 @@
 
   .mobile-menu__container {
     position: relative;
+    padding-top: 253px;
+    padding-left: 156px;
   }
 
   .mobile-menu-text {
-    font-family: 'Epilogue';
+    font-family: 'Epilogue-regular';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
