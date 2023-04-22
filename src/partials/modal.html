@@ -1,8 +1,8 @@
-<!-- Buy now (popup) -- MODAL catalog -->
-<div class="backdrop">
+<!-- Buy now (popup) MODAL catalog -->
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <div class="modal-container">
-            <button type="button" class="modal-close-btn">
+            <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-btn-icon">
                     <use href="/img/sprite.svg#icon-x"></use>
                 </svg>
@@ -21,7 +21,7 @@
                     <span class="modal-form-decr">Full name</span>
                     <span class="modal-form-field">
                         <input type="text" class="modal-form-input" placeholder="Enter your full name" name="user_name"
-                            autofocus pattern="^[a-zA-Zа-яА-ЯіІїЇ]*?\s[a-zA-Zа-яА-ЯіІїЇ]+$"
+                            autofocus pattern="^[a-zA-Zа-яА-ЯіІїЇ]+\s[a-zA-Zа-яА-ЯіІїЇ]+$"
                             title="Username must be two words separated by space." minlength="2">
                     </span>
                 </label>
@@ -48,8 +48,9 @@
                     <textarea name="user_comments" class="modal-form-comments" placeholder="Enter your text"></textarea>
                 </label>
                 <button type="submit" class="modal-form-btn">SUBMIT</button>
-                <span class="modal-form-info-text">By clicking on “Submit” button, you agree to our <a href=""
-                        class="privacy-link">Privacy Policy</a>, and allow Promodo to use this information for marketing
+                <span class="modal-form-info-text">By clicking on &#8220;Submit&#8221; button, you agree to our <a
+                        href="" class="privacy-link">Privacy Policy</a>, and allow Promodo to use this information for
+                    marketing
                     purposes.</span>
             </form>
         </div>
