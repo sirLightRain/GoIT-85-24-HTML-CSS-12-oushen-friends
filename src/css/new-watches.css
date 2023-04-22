@@ -32,10 +32,6 @@
     white-space: normal;
   }
 
-  .br {
-    display: inline-block;
-  }
-
   .img-contain {
     display: flex;
     align-items: center;
