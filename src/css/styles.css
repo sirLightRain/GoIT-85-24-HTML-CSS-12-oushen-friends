@@ -20,6 +20,7 @@
 /* Тут підключаємо Sale */
 
 /* Тут підключаємо footer */
+@import url('./footer.css');
 
 @font-face {
   font-family: 'Epilogue-light';
