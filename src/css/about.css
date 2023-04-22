@@ -81,3 +81,38 @@
   .about-clock {
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-gif {
+    width: 892px;
+    height: 465px;
+    margin-left: auto;
+  }
+
+  .about-clock {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .about-wraper {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+
+  .about-text {
+    width: 426px;
+  }
+}
