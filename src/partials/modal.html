@@ -3,13 +3,14 @@
     <div class="modal">
         <div class="modal-container">
             <button type="button" class="modal-close-btn">
-                <svg class="modal-close-btn-icon" width="20" height="20">
-                    <use href="/src/img/sprite.svg#icon-close-btn-converted"></use>
+                <svg class="modal-close-btn-icon">
+                    <use href="/img/sprite.svg#icon-x"></use>
                 </svg>
             </button>
 
             <div class="modal-selected-product">
-                <img class="modal-img" src="/src/img/img_modal.jpg" srcset="/src/img/img_modal@2x.jpg 2x"
+                <img class="modal-img" src="../img/01-watch-S42-395_1x.jpg"
+                    srcset="../img/01-watch-S42-395_1x.jpg 1x, ../img/01-watch-S42-395_2x.jpg 2x"
                     alt="Image of selected watch" width="276" height="325">
                 <p class="modal-decr-watch">Tube Watch S42 Date Steel With Black...</p>
                 <p class="modal-decr-price">€395</p>
@@ -20,7 +21,7 @@
                     <span class="modal-form-decr">Full name</span>
                     <span class="modal-form-field">
                         <input type="text" class="modal-form-input" placeholder="Enter your full name" name="user_name"
-                            autofocus required pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                            autofocus pattern="^[a-zA-Zа-яА-ЯіІїЇ]*?\s[a-zA-Zа-яА-ЯіІїЇ]+$"
                             title="Username must be two words separated by space." minlength="2">
                     </span>
                 </label>
@@ -29,7 +30,7 @@
                     <span class="modal-form-decr">Email</span>
                     <span class="modal-form-field">
                         <input type="email" class="modal-form-input" placeholder="Enter your email" name="user_email"
-                            required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
                             title="example@gmail.com">
                     </span>
                 </label>
@@ -37,7 +38,7 @@
                 <label class="modal-label">
                     <span class="modal-form-decr">Card number</span>
                     <span class="modal-form-field">
-                        <input type="tel" class="modal-form-input" placeholder="Enter card" name="user_phone" required
+                        <input type="tel" class="modal-form-input" placeholder="Enter card" name="user_phone"
                             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="xxxx-xxxx-xxxx-xxxx">
                     </span>
                 </label>
@@ -47,7 +48,7 @@
                     <textarea name="user_comments" class="modal-form-comments" placeholder="Enter your text"></textarea>
                 </label>
                 <button type="submit" class="modal-form-btn">SUBMIT</button>
-                <span class="modal-form-info-text">By clicking on “Send message” button, you agree to our <a href=""
+                <span class="modal-form-info-text">By clicking on “Submit” button, you agree to our <a href=""
                         class="privacy-link">Privacy Policy</a>, and allow Promodo to use this information for marketing
                     purposes.</span>
             </form>

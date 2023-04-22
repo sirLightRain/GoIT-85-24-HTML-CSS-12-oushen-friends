@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--light-color);
   transition: opacity var(--transition-var), visibility var(--transition-var);
 }
 
@@ -17,16 +17,15 @@
 }
 
 .modal-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
   overflow: auto;
-  width: 100%;
   height: 100%;
-  max-width: 335px;
-  /* max-height: 1073px; */
+  width: 335px;
   padding: 40px 20px;
   margin: 0 auto;
 }
@@ -36,7 +35,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
     0px 0px 130.6px rgba(0, 0, 0, 0.037963),
@@ -67,45 +65,48 @@
   right: 12px;
   width: 20px;
   height: 20px;
-  background-color: rgba(255, 255, 255, 1);
-  /* border: none; */
+  background-color: var(--light-color);
+  border: none;
+  transition: width var(--transition-var), height var(--transition-var);
 }
 
-/* .modal-close-btn:is(:hover, :focus) {
-  background-color: ;
-  border-style: none;
-  box-shadow: ;
-} */
+.modal-close-btn:is(:hover, :focus) {
+  width: 30px;
+  height: 30px;
+}
 
 .modal-close-btn-icon {
-  fill: rgba(20, 20, 20, 1);
-  /* transition: fill var(); */
+  width: 20px;
+  height: 20px;
+  stroke: var(--dark-color);
+  transition: width var(--transition-var), height var(--transition-var);
 }
 
-/* .modal-close-btn:is(:hover, :focus) .modal-close-btn-icon {
-  fill: ;
-} */
+.modal-close-btn:is(:hover, :focus) .modal-close-btn-icon {
+  stroke: rgb(0, 50, 0);
+  width: 30px;
+  height: 30px;
+}
 
-/* .modal-selected-product {
-} */
-
-/* .modal-img {
-} */
+.modal-selected-product {
+  display: flex;
+  flex-direction: column;
+}
 
 .modal-decr-watch {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
-  color: #141414;
+  color: var(--dark-color);
 
   margin-top: 14px;
 }
 
 .modal-decr-price {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -119,6 +120,8 @@
 .modal-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 295px;
 }
 
 .modal-label {
@@ -132,13 +135,13 @@
 }
 
 .modal-form-decr {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: -0.02em;
-  color: #141414;
+  color: var(--dark-color);
 }
 
 .modal-form-field {
@@ -147,35 +150,45 @@
   margin-top: 12px;
 }
 .modal-form-input {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
-  color: rgba(20, 20, 20, 0.5);
+  color: var(--dark-color);
 
   width: 100%;
   height: 42px;
+  outline: none;
   border: 1px solid rgba(20, 20, 20, 0.5);
   border-radius: 8px;
-  outline: none;
   padding: 12px 16px;
-  transition: border-color var(--transition-var);
+  transition: border-color var(--transition-var), outline var(--transition-var),
+    border var(--transition-var);
 }
 
 .modal-form-input:focus-within {
-  border-color: rgba(30, 40, 39, 1);
+  border-color: var(--dark-green);
+}
+
+/* .modal-form-input:valid {
+  border-color: var(--dark-green);
+} */
+
+.modal-form-input:invalid {
+  outline: 1px solid red;
+  border: none;
 }
 
 .modal-form-comments {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
-  color: rgba(20, 20, 20, 0.5);
+  color: var(--dark-color);
 
   display: block;
   resize: none;
@@ -186,11 +199,11 @@
   outline: none;
   padding: 12px 16px;
   margin-top: 12px;
-  transition: border-color var();
+  transition: border-color var(--transition-var);
 }
 
 .modal-form-message:focus-within {
-  border-color: rgba(30, 40, 39, 1);
+  border-color: var(--dark-green);
 }
 
 .modal-form-message::placeholder {
@@ -198,37 +211,38 @@
 }
 
 .modal-form-message:not(:placeholder-shown) {
-  color: rgba(20, 20, 20, 1);
+  color: var(--dark-color);
 }
 
 .modal-form-btn {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
   text-align: center;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: var(--light-color);
 
   display: block;
   cursor: pointer;
   min-width: 295px;
   height: 50px;
-  background-color: rgba(30, 40, 39, 1);
-  border-radius: 4px;
-  padding: 16px 32px;
+  background-color: var(--dark-green);
+  border-radius: 8px;
+  padding: 18px 116px;
   margin: 20px auto 0;
   border: none;
-  transition: background-color var(--transition-dur-and-func);
+  transition: border var(--transition-var), box-shadow var(--transition-var);
 }
 
-/* .modal-form-btn:is(:hover, :focus) {
-  background-color: ;
-} */
+.modal-form-btn:is(:hover, :focus) {
+  border: 1px solid var(--light-color);
+  box-shadow: 0px 4px 4px rgba(20, 20, 20, 0.5);
+}
 
 .modal-form-info-text {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -244,4 +258,55 @@
 
 .privacy-link {
   text-decoration: underline;
+}
+
+/*! ======== TABLET ========*/
+@media screen and (min-width: 768px) {
+  .modal-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 744px;
+    padding: 40px;
+  }
+
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-close-btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-form {
+    max-width: 368px;
+  }
+
+  .modal-form-btn {
+    min-width: 368px;
+    padding: 18px 153px;
+  }
+}
+
+/*! ======== DESKTOP ========*/
+
+@media screen and (min-width: 1440px) {
+  .modal-container {
+    gap: 40px;
+    width: 904px;
+  }
+
+  .modal-form {
+    max-width: 508px;
+  }
+
+  .modal-form-btn {
+    min-width: 508px;
+    padding: 18px 222px;
+  }
 }
