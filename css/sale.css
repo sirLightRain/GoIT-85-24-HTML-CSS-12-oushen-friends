@@ -29,8 +29,6 @@ body {
     color: var(--darck-color);
 }
 .container {
-    width: 1440px;
-    padding: 0 147px; /*132px+15px*/
     margin: 0 auto;
 }
 .list {
@@ -42,7 +40,7 @@ body {
 
 /*-----------------Adaptive-IMG--------------------*/
 /*-----------------Sale-IMG--------------------*/
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
     .sale-img-clock-1 {
         background-image: url(../img/clock-1.jpg);
     }
@@ -64,11 +62,11 @@ body {
        screen and (min-resolution: 192dpi) and (max-width: 1199px),
        screen and (min-resolution: 2dppx) and (max-width: 1199px) {
     .sale-img-clock-1 {
-        background-image: url(../img/clock-1.jpg);;
+        background-image: url(../img/clock-1.jpg);
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .sale-img-clock-1 {
         background-image: url(../img/clock-1.jpg);
     }
@@ -83,7 +81,12 @@ body {
 /*-----------------Sale-IMG--------------------*/
 /*-----------------Adaptive-IMG--------------------*/
 
-/*-----------------------------------------Sale--------------------------------------------------*/
+/*-----------------------------------------Sale-DESCTOP--------------------------------------------------*/
+@media screen and (min-width: 1280px) {
+.container {
+    width: 1280px;
+    padding: 0 52px;
+}
 .sale {
     padding: 80px 0 160px 0;
 }
@@ -114,8 +117,9 @@ body {
     
 }
 .sale-img-clock-1 {
+    background-color: #141414;
+    position: relative;
     background-image: url(../img/clock-1.jpg);
-    /* background: #141414; */
     width: 146px;
     height: 146px;
     background-position: center center;
@@ -162,6 +166,7 @@ body {
     
 }
 .sale-info-clock-title {
+    position: relative;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -169,6 +174,22 @@ body {
     text-transform: uppercase;
     color: #141414;
     margin-bottom: 17px;
+}
+.sale-info-clock-title::after {
+    content: "";
+    width: 16px;
+    height: 0;
+    border: 1px solid #141414;
+    position: absolute;
+    left: 363px;
+    bottom: 13px;
+}
+.sale-info-clock-title::before {
+    content: "";
+    width: 379px;
+    top: -8px;
+    border: 1px solid #141414;
+    position: absolute;
 }
 .sale-info-clock-text-1 {
     width: 396px;
@@ -190,6 +211,6 @@ body {
     letter-spacing: -0.01em;
     color: rgba(20, 20, 20, 0.5);
 }
+}
 
-
-/*-----------------------------------------Sale--------------------------------------------------*/
+/*-----------------------------------------Sale-DESCTOP--------------------------------------------------*/
