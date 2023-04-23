@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --transition-duration: 250ms;
     --trsition-function: cubic-bezier(0.4, 0, 0.2, 1);
     --dark-color: #141414;
@@ -44,10 +44,10 @@ body {
 
 .link {
     text-decoration: none;
-}
+} */
 
 .sale {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -177,10 +177,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* .sale-info-watch-text-1:last-child {
-margin-bottom: 40px;
-} */
-
 .sale-info-watch-text-2 {
     width: 162px;
     height: 143px;
@@ -202,6 +198,64 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .sale-img-watch-1 {
         background-image: url(../img/img-watch1.jpg);
     }
+
+.sale {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.sale-flex-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 572px;
+    gap: 40px;
+    margin-left: auto;
+        margin-right: auto;
+}
+
+.sale-title {
+    font-size: 40px;
+        line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--dark-green);
+}
+
+.sale-subtitle {
+    width: 572px;
+        height: 80px;
+    font-size: 38px;
+        line-height: 1.05;
+}
+
+.sale-info-watch-title::before {
+    content: "";
+    width: 572px;
+    top: -20px;
+    border: 1px solid #141414;
+    position: absolute;
+}
+
+.sale-info-watch-title::after {
+    content: "";
+    width: 16px;
+    height: 0;
+    border: 1px solid #141414;
+    position: absolute;
+    left: 556px;
+}
+
+.sale-info-watch-text-1 {
+    width: 572px;
+    height: 72px;
+    margin-bottom: 40px;
+}
+
+.sale-info-watch-text-2 {
+    width: 162px;
+    height: 143px;
+}
+
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
