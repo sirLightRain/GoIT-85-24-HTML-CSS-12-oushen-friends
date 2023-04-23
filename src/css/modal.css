@@ -94,9 +94,8 @@
 }
 
 .modal-decr-watch {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+  
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
@@ -106,9 +105,8 @@
 }
 
 .modal-decr-price {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+  
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: -0.02em;
@@ -135,9 +133,8 @@
 }
 
 .modal-form-decr {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+  
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: -0.02em;
@@ -150,9 +147,8 @@
   margin-top: 12px;
 }
 .modal-form-input {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
@@ -182,9 +178,8 @@
 }
 
 .modal-form-comments {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+  
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
@@ -215,9 +210,8 @@
 }
 
 .modal-form-btn {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+  
   font-size: 12px;
   line-height: calc(14 / 12);
   text-align: center;
@@ -242,9 +236,8 @@
 }
 
 .modal-form-info-text {
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Epilogue-regular', sans-serif;
+  
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
