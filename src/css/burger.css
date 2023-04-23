@@ -69,7 +69,7 @@
     right: 20px;
     background-color: transparent;
     border: none;
-    /* padding: 0; */
+    padding: 0;
     line-height: 0;
   }
 
@@ -91,13 +91,21 @@
     padding-right: 156px;
   }
 
+  .mobile-link {
+    margin-bottom: 14px;
+  }
+
+  .mobile-link:last-child {
+    margin-bottom: 0;
+  }
+
   .mobile-menu-text {
     font-family: 'Epilogue-regular';
     font-style: normal;
     font-weight: 400;
     text-align: center;
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #ffffff;
