@@ -1,0 +1,220 @@
+
+.footer {
+    background-color: var(--dark-green);
+    color: var(--light-color);
+}
+
+.footer-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* === Logo === */
+.footer-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* === Adress block === */
+.footer-logo-adress-block {
+    display: block;
+    padding-top: 40px;
+
+    font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: var(--light-color);
+}
+
+.footer-tel {
+    display: block;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.footer-tel {
+    transition: transform var(--transition-var);
+}
+
+.footer-tel:hover,
+.footer-tel:focus
+{
+    transform: scale(1.15);
+}
+
+.footer-adress {
+    display: block;
+    margin-top: 20px;
+
+    letter-spacing: -0.02em;
+}
+
+.footer-adress-link{
+    transition: transform var(--transition-var);
+    display: block;
+}
+
+.footer-adress-link:hover,
+.footer-adress-link:focus{
+    transform: scale(1.15);
+}
+
+/* === Блок навігації: About as і т.д. === */
+.footer-navigation-block {
+    display: block;
+    padding-top: 40px;
+    margin-left: auto;
+
+    font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--light-color);
+}
+
+.footer-navigation-item + .footer-navigation-item {
+    margin-top: 14px;
+}
+
+.footer-navigation-link {
+    transition: transform var(--transition-var);
+    display: block;
+}
+
+.footer-navigation-link:hover,
+.footer-navigation-link:focus {
+    transform: scale(1.25);
+}
+
+/* === Блок соціальних мереж === */
+.footer-social-block {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: left;
+    gap: 14px;
+}
+
+.social-list-icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+.social-list-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list-link {
+    width: 44px;
+    height: 44px;
+
+    transition: border-color var(--transition-var), transform var(--transition-var);
+}
+
+.social-list-link:focus,
+.social-list-link:hover {
+    border-color: var(--light-color);
+    transform: scale(1.25);
+}
+
+/* === Блок: footer-all-rights-reserwed === */
+.footer-all-rights-reserwed {
+    display: block;
+    padding-bottom: 20px;
+
+    font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    
+    color: #C6CDD1;
+
+    opacity: 0.9;
+}
+
+.footer-all-rights-reserwed-menu {
+    display: flex;
+    gap: 14px;
+    padding-top: 14px;
+}
+
+/* === Точка перелому на таблет 768 === */
+@media screen and (min-width: 768px) {
+    .footer-block {
+        
+        padding-top: 80px;
+        padding-bottom: 152px;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-logo-adress-block {
+        padding-top: 0px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .footer-navigation-block {
+        padding-top: 0px;
+        margin-left: 142px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .footer-social-block {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: auto;
+    }
+
+    .social-list {
+        gap: 16px;
+    }
+
+    .social-list-icon{
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-all-rights-reserwed {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .footer-all-rights-reserwed {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-all-rights-reserwed-menu {
+        padding-top: 0;
+        gap: 18px;
+    }
+}
+/* === Точка перелому на таблет 1280 === */
+@media screen and (min-width: 1280px) {
+   .footer-navigation-block{
+    padding-left: 0;
+    margin-left: 355px;
+   }
+   
+}
