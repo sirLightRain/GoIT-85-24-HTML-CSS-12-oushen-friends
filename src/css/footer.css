@@ -20,7 +20,7 @@
     display: block;
     padding-top: 40px;
 
-    font-family: 'Epilogue-Regular';
+    font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
 
     font-size: 14px;
     line-height: 1.29;
@@ -67,7 +67,7 @@
     padding-top: 40px;
     margin-left: auto;
 
-    font-family: 'Epilogue-Regular';
+    font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
     
     font-size: 14px;
     line-height: 1.29;
@@ -137,7 +137,7 @@
     display: block;
     padding-bottom: 20px;
 
-    font-family: 'Epilogue-Regular';
+    font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
     
     font-size: 12px;
     line-height: 1.17;
