@@ -11,7 +11,6 @@
 .catalog_list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   margin: 0;
   padding: 0;
   gap: 40px;
@@ -28,87 +27,31 @@
 
 .overlay_text_topic {
   font-family: 'Epilogue';
-  font-size: 14px;
   line-height: 1.29;
+  font-size: 14px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 4px;
 }
 
-.overlay_text > .overlay_text_topic {
-  color: var(--light-color);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
 
 .overlay_text > .overlay_text_characteristic {
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.15;
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (min-width: 768px) {
-  .catalog_list {
-    gap: 40px 32px;
-  }
-  .overlay_text_topic {
-    margin-bottom: 4px;
-    padding: 6px;
-  }
-  .overlay_text_characteristic {
-    margin-bottom: 4px;
-    padding: 6px 0;
-  }
-}
-
-/* заголовок секции комп версия  */
-
-@media screen and (max-width: 1280px) {
-  .catalog_list > .item {
-    /* width: 276px; */
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .section-title {
-    font-size: 40px;
-    line-height: 1.1;
-    margin-bottom: 64px;
-  }
-
-  .catalog_list {
-    justify-content: center;
-    margin-left: -24px;
-    gap: 0;
-  }
-  .catalog_list > .item {
-    /* width: calc((100% / 4) - 24px); */
-    width: calc((100% - 72px) / 4);
-    margin-left: 24px;
-    margin-bottom: 82px;
-  }
-  .overlay_text {
-    width: 276px;
-    height: 325px;
-    padding: 20px;
-  }
-}
-
 .catalog_list > .item {
-  /* outline: 1px solid teal; */
   width: 276px;
 }
 
 /* выезжающий текст */
-.item {
-}
 .item-wraper {
   position: relative;
   overflow: hidden;
+  margin-bottom: 14px;
 }
 .overlay_text {
   position: absolute;
@@ -118,36 +61,13 @@
   height: 100%;
   background-color: var(--dark-green);
   border-radius: 8px;
-  padding: 40px;
+  padding: 20px 59px 20px 20px;
   transform: translate(0, 100%);
   transition: transform 250ms linear;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
-/* .overlay_text_topic {
-  font-family: 'Epilogue';
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
 
-.overlay_text > .overlay_text_topic {
-  color: var(--light-color);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
-
-.overlay_text > .overlay_text_characteristic {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.01em;
-  color: rgba(255, 255, 255, 0.5);
-} */
 
 .overlay_text_characteristic.first {
   width: 100%;
@@ -156,26 +76,13 @@
 
 .overlay_text_characteristic.last {
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 pre {
   font: inherit;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-/* выезжающий текст комп версия */
-@media screen and (min-width: 1280px) {
-  /* .overlay_text {
-    width: 276px;
-    height: 325px;
-    padding: 20px;
-  } */
-}
-
-/* AREA PRICE AND NAME */
-.area_name_and_price {
-  /* margin-top: 14px; */
-}
 
 /* WATCH NAME  */
 .watch-name {
@@ -224,11 +131,50 @@ pre {
   border: 1px solid #ffffff;
 }
 
+
+@media screen and (min-width: 768px) {
+    .catalog_list {
+        gap: 40px 32px;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    .catalog_list{
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 1280px) {
-  .btn_buy_now {
-    width: 122px;
-    height: 50px;
-    margin-top: 0;
-    border-radius: 8px;
-  }
+    .section-title {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 64px;
+    }
+
+    .catalog_list {
+        /* justify-content: center; */
+        margin-left: -24px;
+        gap: 0;
+    }
+
+    .catalog_list>.item {
+        width: calc((100% / 4) - 24px);
+        /* width: calc((100% - 72px) / 4); */
+        margin-left: 24px;
+        margin-bottom: 82px;
+    }
+
+    .overlay_text {
+        width: 276px;
+        height: 325px;
+        padding: 20px;
+    }
+
+    .btn_buy_now {
+        width: 122px;
+        height: 50px;
+        margin-top: 0;
+              border-radius: 8px;
+          }
 }
