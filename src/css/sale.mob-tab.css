@@ -177,18 +177,18 @@
     color: rgba(20, 20, 20, 0.5);
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .sale-img-watch-1 {
         background-image: url(../img/img-watch1.jpg);
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
-    .sale-img-watch-1 {
+    /* .sale-img-watch-1 {
         background-image: url(../img/img-watch1.jpg);
-    }
+    } */
 
 .sale {
     padding-top: 128px;
@@ -206,7 +206,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .sale-title {
-    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Epilogue-semi', Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.02em;
