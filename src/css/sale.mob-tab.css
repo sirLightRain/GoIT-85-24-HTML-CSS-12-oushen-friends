@@ -1,50 +1,3 @@
-/* :root {
-    --transition-duration: 250ms;
-    --trsition-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --dark-color: #141414;
-    --light-color: #FFFFFF;
-    --dark-green: #1E2827;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-    padding-left: 0;
-}
-
-img {
-    display: block;
-}
-
-button {
-    cursor: pointer;
-}
-
-body {
-    font-family: 'Epilogue', sans-serif;
-    color: var(--dark-color);
-}
-
-.container {
-    margin: 0 auto;
-}
-
-.list {
-    list-style-type: none;
-}
-
-.link {
-    text-decoration: none;
-} */
 
 .sale {
     padding-top: 80px;
@@ -79,7 +32,37 @@ body {
     gap: 10px;
 }
 
-.sale-img-watch-1 {
+.big-watch-standart {
+    display: flex;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+
+    background-image: url('../img/img-watch1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .big-watch-standart {
+            background-image: url('../img/img-watch1-2x.jpg');
+        } 
+    }
+
+.sale-list-big {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+.sale-list-big > .list {
+    background-color: var(--dark-color);
+}
+
+/* .sale-img-watch-1 {
     background-color: #141414;
     position: relative;
     background-image: url(../img/img-watch1.jpg);
@@ -87,7 +70,7 @@ body {
     height: 146px;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 .sale-subtitle {
     width: 335px;
