@@ -139,10 +139,13 @@ pre {
 
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1279px){
     .catalog_list{
         justify-content: center;
     }
+        .item.hidden {
+            display: none;
+        }
 }
 
 @media screen and (min-width: 1280px) {
@@ -177,4 +180,8 @@ pre {
         margin-top: 0;
               border-radius: 8px;
           }
+
+        .item.hidden{
+    display: block;
+    }
 }
