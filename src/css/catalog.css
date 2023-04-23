@@ -68,8 +68,6 @@
 }
 
 /* выезжающий текст */
-.item {
-}
 .item-wraper {
   position: relative;
   overflow: hidden;
