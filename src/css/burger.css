@@ -22,9 +22,10 @@
 
   .header {
     background-color: black;
-    /* padding: 29px 20px 30px 20px; */
+    /* колір приберу, коли буде готовий hero*/
     padding-top: 29px;
     padding-bottom: 29px;
+    /* падінг приберу, коли буде готовий hero*/
   }
 
   .logo {
