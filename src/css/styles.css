@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 /* Так підключаємо header. Все інше за аналогією. */
+@import url('./burger.css');
 
 /* Тут підключаємо HERO */
 
