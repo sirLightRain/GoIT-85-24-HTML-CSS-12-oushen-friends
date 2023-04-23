@@ -13,7 +13,7 @@
 /* Тут підключаємо About us */
 @import url('./about.css');
 /* Тут підключаємо Catalog */
-
+@import url('./catalog.css');
 /* Тут підключаємо Catalog-modal-windov */
 
 @import url('./new-watches.css');
