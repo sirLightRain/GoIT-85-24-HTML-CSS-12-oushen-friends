@@ -158,7 +158,6 @@ pre {
 
   .catalog_list > .item {
     width: calc((100% / 4) - 24px);
-    /* width: calc((100% - 72px) / 4); */
     margin-left: 24px;
     margin-bottom: 82px;
   }
