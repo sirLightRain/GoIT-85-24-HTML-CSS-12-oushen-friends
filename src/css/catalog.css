@@ -1,6 +1,6 @@
 /* заголовок секции */
 .section-title {
-  font-weight: 600;
+  font-family: 'Epilogue-semibold', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -82,7 +82,7 @@ pre {
 
 /* WATCH NAME  */
 .watch-name {
-  font-weight: 400;
+  font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -91,7 +91,7 @@ pre {
 
 /* PRICE */
 .watch-price {
-  font-weight: 400;
+  font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -105,6 +105,7 @@ pre {
 }
 
 .btn_buy_now {
+  font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
   width: 108px;
   height: 42px;
   border-radius: 8px;
