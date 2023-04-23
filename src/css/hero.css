@@ -44,7 +44,17 @@
     margin-top: 20px;
     margin-bottom: 40px;
 }
- 
+.tabl-hero-text {
+    display: none;
+    font-family: 'Epilogue-light', sans-serif;
+    margin-bottom: 40px;
+    margin-left: auto;
+    width: 248px;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: var(--light-color);
+}
 
 /*  */
 @media screen and (min-width: 375px) {
@@ -74,6 +84,16 @@
         align-items: center;
         justify-content: center;
     }
+    .mySwiper {
+        display: flex;
+        align-items: center;
+    }
+    .tabl-hero-text {
+        display: block;
+    }
+    .hero-text {
+        display: none;
+    } 
 }
 @media screen and (min-width: 1280px) {
     .container-title {
