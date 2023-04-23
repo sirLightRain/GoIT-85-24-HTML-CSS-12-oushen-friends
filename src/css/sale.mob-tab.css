@@ -1,11 +1,61 @@
+:root {
+    --transition-duration: 250ms;
+    --trsition-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --dark-color: #141414;
+    --light-color: #FFFFFF;
+    --dark-green: #1E2827;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: var(--dark-color);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 .sale {
-    padding: 80px 0 160px 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .sale-flex-elements {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 1176px;
+    width: 335px;
     gap: 40px;
 }
 
@@ -16,11 +66,11 @@
 
 .sale-title {
     font-weight: 600;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 1.25;
     letter-spacing: -0.02em;
-    color: var(--dark-green);
-    margin-bottom: 80px;
+    color: var(--dark-color);
+    margin-bottom: 40px;
 }
 
 .sale-list {
@@ -29,31 +79,30 @@
     gap: 10px;
 }
 
-.sale-list-1 {}
-
-.sale-img-clock-1 {
-    background-image: url(../img/clock-1.jpg);
-    /* background: #141414; */
+.sale-img-watch-1 {
+    background-color: #141414;
+    position: relative;
+    background-image: url(../img/img-watch1.jpg);
     width: 146px;
     height: 146px;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .sale-subtitle {
-    width: 369px;
-    height: 80px;
+    width: 335px;
+    height: 48px;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 1;
     letter-spacing: -0.02em;
-    color: var(--dark-color);
+    color: #141414;
     margin-bottom: 8px;
 }
 
 .sale-subtitle-item {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: rgba(20, 20, 20, 0.5);
     margin-bottom: 16px;
@@ -69,68 +118,88 @@
 .sale-subtitle-700 {
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     letter-spacing: -0.02em;
-    color: var(--dark-color);
+    color: #141414;
 }
 
 .sale-subtitle-item-1000 {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: -0.02em;
     text-decoration-line: line-through;
     color: rgba(20, 20, 20, 0.5);
 }
 
-.sale-info-clock {}
+.sale-info-watch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+}
 
-.sale-info-clock-title {
+.sale-info-watch-title {
+    position: relative;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: var(--dark-color);
+    color: #141414;
     margin-bottom: 17px;
 }
 
-.sale-info-clock-text-1 {
-    width: 396px;
-    height: 126px;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-    color: rgba(20, 20, 20, 0.5);
-    margin-bottom: 20px;
+.sale-info-watch-title::before {
+    content: "";
+    width: 335px;
+    top: -20px;
+    border: 1px solid #141414;
+    position: absolute;
 }
 
-.sale-info-clock-item {}
+.sale-info-watch-title::after {
+    content: "";
+    width: 16px;
+    height: 0;
+    border: 1px solid #141414;
+    position: absolute;
+    left: 319px;
+    /* bottom: 13px; */
+}
 
-.sale-info-clock-text-2 {
+.sale-info-watch-text-1 {
+    width: 335px;
+    height: 132px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-bottom: 40px;
+}
+
+/* .sale-info-watch-text-1:last-child {
+margin-bottom: 40px;
+} */
+
+.sale-info-watch-text-2 {
     width: 162px;
     height: 143px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.01em;
     color: rgba(20, 20, 20, 0.5);
-}
-
-@media screen and (min-width: 480px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/img-watch1.jpg);
-    }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .sale-img-clock-1 {
+    .sale-img-watch-1 {
         background-image: url(../img/img-watch1.jpg);
     }
 }
 
 @media screen and (min-width: 768px) {
-    .sale-img-clock-1 {
+    .sale-img-watch-1 {
         background-image: url(../img/img-watch1.jpg);
     }
 }
@@ -138,22 +207,22 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
 screen and (min-resolution: 192dpi) and (max-width: 1199px),
 screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-    .sale-img-clock-1 {
+    .sale-img-watch-1 {
         background-image: url(../img/img-watch1.jpg);
         ;
     }
 }
 
 /* @media screen and (min-width: 1200px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1.jpg);
+    .sale-img-watch-1 {
+        background-image: url(../img/watch-1.jpg);
     }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
 screen and (min-resolution: 192dpi) and (max-width: 1440px),
 screen and (min-resolution: 2dppx) and (max-width: 1440px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1.jpg);
+    .sale-img-watch-1 {
+        background-image: url(../img/watch-1.jpg);
     }
 } */
