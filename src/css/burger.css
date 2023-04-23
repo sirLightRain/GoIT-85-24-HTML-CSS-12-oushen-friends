@@ -12,13 +12,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  /* .container {
     max-width: 375px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   .header {
     background-color: black;
@@ -44,6 +44,16 @@
     letter-spacing: -0.03em;
 
     color: #ffffff;
+  }
+
+  .header-text:before {
+    content: '';
+    background: url('../img/logo-cropped.svg') no-repeat;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    float: left;
+    margin: 0 4px 0 0;
   }
 
   .mobile-menu-open {
@@ -78,12 +88,14 @@
     position: relative;
     padding-top: 253px;
     padding-left: 156px;
+    padding-right: 156px;
   }
 
   .mobile-menu-text {
     font-family: 'Epilogue-regular';
     font-style: normal;
     font-weight: 400;
+    text-align: center;
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: -0.02em;
