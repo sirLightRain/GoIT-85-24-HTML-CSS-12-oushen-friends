@@ -39,14 +39,16 @@
   }
 
   .header-text {
-    font-family: 'Epilogue-regular';
+    font-family: 'Epilogue-regular', Verdana, 'Times New Roman', Arial;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1;
     letter-spacing: -0.03em;
 
-    color: #ffffff;
+    color: var(--light-color);
+    position: relative;
+    left: 15px;
   }
 
   .header-text:before {
@@ -57,6 +59,9 @@
     vertical-align: middle;
     float: left;
     margin: 0 4px 0 0;
+    position: absolute;
+    margin-left: -16px;
+    top: -3px;
   }
 
   .mobile-menu-open {
@@ -90,14 +95,14 @@
     height: 100%;
     /* top: 0;
     left: 0; */
-    background-color: #1e2827;
+    background-color: var(--dark-green);
     z-index: 100;
     visibility: hidden;
     pointer-events: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition-var);
   }
 
   .mobile-menu__container {
@@ -116,7 +121,7 @@
   }
 
   .mobile-menu-text {
-    font-family: 'Epilogue-regular';
+    font-family: 'Epilogue-regular', Verdana, 'Times New Roman', Arial;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -124,6 +129,6 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--light-color);
   }
 }
