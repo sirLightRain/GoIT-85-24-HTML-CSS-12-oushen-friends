@@ -93,7 +93,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .overlay_text > .overlay_text_topic {
@@ -121,6 +121,7 @@
 }
 pre {
   font: inherit;
+  margin: 0;
 }
 
 /* выезжающий текст комп версия */
