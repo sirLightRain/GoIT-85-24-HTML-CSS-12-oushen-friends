@@ -27,7 +27,7 @@
 }
 
 .about-gif {
-  width: 335px;
+  width: 100%;
   height: 365px;
   overflow: hidden;
   display: flex;
