@@ -21,7 +21,7 @@
   }
 
   .header {
-    background-color: black;
+    background-color: var(--dark-color);
     /* колір приберу, коли буде готовий hero*/
     padding-top: 29px;
     padding-bottom: 69px;
