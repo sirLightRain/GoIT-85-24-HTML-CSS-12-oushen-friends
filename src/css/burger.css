@@ -61,6 +61,7 @@
     border: none;
     padding-right: 0px;
     line-height: 0;
+    transition: transform var(--transition-var);
   }
 
   .mobile-menu.is-open {
@@ -78,6 +79,7 @@
     padding-right: 0;
     line-height: 0;
     cursor: pointer;
+    transition: transform var(--transition-var);
   }
 
   .mobile-menu {
@@ -120,5 +122,15 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: var(--light-color);
+  }
+
+  .mobile-link {
+    transition: transform var(--transition-var);
+    display: block;
+  }
+
+  .mobile-link:hover,
+  .mobile-link:focus {
+    transform: scale(1.25);
   }
 }
