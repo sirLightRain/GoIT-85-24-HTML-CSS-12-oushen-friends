@@ -1,0 +1,158 @@
+/* Reset styles */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+  }
+  
+  .link {
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    font-family: Epilogue, sans-serif;
+  }
+  
+  /* ====================* Медіа правила для контейнерів *==================== */
+  /* --- Before Mobile container ---- */
+  @media  screen and (max-width: 375px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+  /* --- Mobile container ---- */
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+  /* --- Planshet container ---- */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+  /* --- Desctop container ---- */
+@media  screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+}
+header-container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+@media screen and (min-windth: 768px) {
+.header-container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.header-wraper{
+    display: flex;
+}
+.header-logo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 32px;
+}
+
+.header-text {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.03em;
+    color: var(--light-color);
+    padding-left: 4px;
+
+}
+
+.header-navigation-item {
+    padding-top: 40px;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    gap: 40px;
+}
+
+.header-tel {
+    position: absolute;
+    width: 159px;
+    height: 48px;
+    left: 577px;
+    top: 20px;
+    font-size: 9px;
+    line-height:1.33;
+    text-align: center;
+    text-transform: uppercase;
+    border-color: var(--dark-green);
+    border-radius: 8px;
+}
+}
+
+@media screen and (min-windth: 1280px) {
+
+}
+
