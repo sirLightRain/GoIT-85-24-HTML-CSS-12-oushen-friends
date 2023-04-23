@@ -6,11 +6,11 @@
 */
 @import url('./reset.css');
 /* Так підключаємо header. Все інше за аналогією. */
-@import url('./header.css');
+
 /* Тут підключаємо HERO */
 
 /* Тут підключаємо About us */
-
+@import url('./about.css');
 /* Тут підключаємо Catalog */
 
 @import url('./modal.css');
@@ -20,6 +20,7 @@
 /* Тут підключаємо Sale */
 
 /* Тут підключаємо footer */
+@import url('./footer.css');
 
 @font-face {
   font-family: 'Epilogue-light';
