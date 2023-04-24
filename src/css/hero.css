@@ -3,9 +3,11 @@
     padding-bottom: 40px;
     background-color: #141414;
 }
+.container-title {
+    margin-bottom: 60px;
+}
 .hero-title {
     font-family: 'Epilogue-semibold',sans-serif;
-    margin-bottom: 60px;
     font-size: 38px;
     line-height: 1.05;
     letter-spacing: -0.04em;
@@ -99,8 +101,6 @@
     .container-title {
         display: flex;
         width: 100%;
-    }
-    .hero-title {
         margin-bottom: 43px;
     }
     .hero-text-invisible {
