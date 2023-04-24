@@ -1,3 +1,7 @@
+.catalog_section {
+  padding-bottom: 80px;
+}
+
 /* заголовок секции */
 .section-title {
   font-family: 'Epilogue-semibold', Verdana, Geneva, Tahoma, sans-serif;
@@ -129,6 +133,10 @@ pre {
 }
 
 @media screen and (min-width: 768px) {
+  .catalog_section {
+    padding-bottom: 128px;
+  }
+
   .catalog_list {
     gap: 40px 32px;
   }
@@ -144,6 +152,10 @@ pre {
 }
 
 @media screen and (min-width: 1280px) {
+  .catalog_section {
+    padding-bottom: 160px;
+  }
+
   .section-title {
     font-size: 40px;
     line-height: 1.1;
