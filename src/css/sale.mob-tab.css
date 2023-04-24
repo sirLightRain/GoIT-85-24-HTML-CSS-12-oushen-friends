@@ -1,0 +1,274 @@
+
+.sale {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sale-flex-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 335px;
+    gap: 40px;
+}
+
+.sale-flex-elements-img {
+    display: flex;
+    gap: 20px;
+}
+
+.sale-title {
+    font-family: 'Epilogue-semibold';
+    /* font-weight: 600; */
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+    margin-bottom: 40px;
+}
+
+.sale-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.big-watch-standart {
+    display: flex;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+
+    background-image: url('../img/img-watch1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .big-watch-standart {
+            background-image: url('../img/img-watch1-2x.jpg');
+        } 
+    }
+
+.sale-list-big {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+.sale-list-big > .list {
+    background-color: var(--dark-color);
+}
+
+/* .sale-img-watch-1 {
+    background-color: #141414;
+    position: relative;
+    background-image: url(../img/img-watch1.jpg);
+    width: 146px;
+    height: 146px;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.sale-subtitle {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 335px; */
+    height: 48px;
+    /* font-weight: 400; */
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #141414;
+    margin-bottom: 8px;
+}
+
+.sale-subtitle-item {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-bottom: 16px;
+}
+
+.sale-list-700_1000 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sale-subtitle-700 {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: #141414;
+}
+
+.sale-subtitle-item-1000 {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-decoration-line: line-through;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.sale-info-watch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.sale-info-watch-title {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 17px;
+}
+
+.sale-info-watch-title::before {
+    content: "";
+    width: 335px;
+    top: -20px;
+    border: 1px solid #141414;
+    position: absolute;
+}
+
+.sale-info-watch-title::after {
+    content: "";
+    width: 16px;
+    height: 0;
+    border: 1px solid #141414;
+    position: absolute;
+    left: 319px;
+    /* bottom: 13px; */
+}
+
+.sale-info-watch-text-1 {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    width: 335px;
+    height: 132px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+    margin-bottom: 40px;
+}
+
+.sale-info-watch-text-2 {
+    font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+    width: 162px;
+    height: 143px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .sale-img-watch-1 {
+        background-image: url(../img/img-watch1.jpg);
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    /* .sale-img-watch-1 {
+        background-image: url(../img/img-watch1.jpg);
+    } */
+
+.sale {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.sale-flex-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 572px;
+    gap: 40px;
+    margin-left: auto;
+        margin-right: auto;
+}
+
+.sale-title {
+    /* font-family: 'Epilogue-semi', Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--dark-green);
+}
+
+.sale-subtitle {
+    width: 572px;
+        height: 80px;
+    font-size: 38px;
+        line-height: 1.05;
+}
+
+.sale-info-watch-title::before {
+    content: "";
+    width: 572px;
+    top: -20px;
+    border: 1px solid #141414;
+    position: absolute;
+}
+
+.sale-info-watch-title::after {
+    content: "";
+    width: 16px;
+    height: 0;
+    border: 1px solid #141414;
+    position: absolute;
+    left: 556px;
+}
+
+.sale-info-watch-text-1 {
+    width: 572px;
+    height: 72px;
+    margin-bottom: 40px;
+}
+
+.sale-info-watch-text-2 {
+    width: 162px;
+    height: 143px;
+}
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+    .sale-img-watch-1 {
+        background-image: url(../img/img-watch1.jpg);
+        ;
+    }
+}
+
+/* @media screen and (min-width: 1200px) {
+    .sale-img-watch-1 {
+        background-image: url(../img/watch-1.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
+screen and (min-resolution: 192dpi) and (max-width: 1440px),
+screen and (min-resolution: 2dppx) and (max-width: 1440px) {
+    .sale-img-watch-1 {
+        background-image: url(../img/watch-1.jpg);
+    }
+} */

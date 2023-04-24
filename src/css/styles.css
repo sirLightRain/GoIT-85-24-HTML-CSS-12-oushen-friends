@@ -6,19 +6,21 @@
 */
 @import url('./reset.css');
 /* Так підключаємо header. Все інше за аналогією. */
+@import url('./burger.css');
 
 /* Тут підключаємо HERO */
 
 /* Тут підключаємо About us */
 @import url('./about.css');
 /* Тут підключаємо Catalog */
-
+@import url('./catalog.css');
 /* Тут підключаємо Catalog-modal-windov */
+@import url('./modal.css');
 
-/* Тут підключаємо Green And Bronze—The Match Made In Heaven */
+@import url('./new-watches.css');
 
 /* Тут підключаємо Sale */
-
+@import url('./sale.mob-tab.css');
 /* Тут підключаємо footer */
 @import url('./footer.css');
 
@@ -35,7 +37,7 @@
   font-family: 'Epilogue-regular';
   src: url('../fonts/Epilogue-Regular.woff2') format('woff2'),
     url('../fonts/Epilogue-Regular.woff') format('woff');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

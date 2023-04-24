@@ -1,0 +1,181 @@
+/* заголовок секции */
+.section-title {
+  font-family: 'Epilogue-semibold', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+/* список с часами  */
+.catalog_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.catalog_list-link {
+  display: block;
+}
+
+.catalog_list-link:hover .overlay_text,
+.catalog_list-link:focus .overlay_text {
+  transform: translate(0px, 0px);
+}
+
+.overlay_text_topic {
+  font-family: 'Epilogue';
+  line-height: 1.29;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.overlay_text > .overlay_text_characteristic {
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.catalog_list > .item {
+  width: 276px;
+}
+
+/* выезжающий текст */
+.item-wraper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.overlay_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-green);
+  border-radius: 8px;
+  padding: 20px 59px 20px 20px;
+  transform: translate(0, 100%);
+  transition: transform 250ms linear;
+  /* overflow-y: scroll; */
+}
+
+.overlay_text_characteristic.first {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.overlay_text_characteristic.last {
+  width: 100%;
+}
+pre {
+  font: inherit;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* WATCH NAME  */
+.watch-name {
+  font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--dark-color);
+}
+
+/* PRICE */
+.watch-price {
+  font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+  margin-top: 4px;
+}
+
+/* кнопка "BUY NOW" */
+.button_area {
+  text-align: end;
+}
+
+.btn_buy_now {
+  font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
+  width: 108px;
+  height: 42px;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: var(--dark-green);
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border: transparent;
+  margin-bottom: 26px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn_buy_now:hover,
+.btn_buy_now:focus {
+  border: 1px solid #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog_list {
+    gap: 40px 32px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .catalog_list {
+    justify-content: center;
+  }
+  .item.hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 64px;
+  }
+
+  .catalog_list {
+    /* justify-content: center; */
+    margin-left: -24px;
+    gap: 0;
+  }
+
+  .catalog_list > .item {
+    width: calc((100% / 4) - 24px);
+    margin-left: 24px;
+    margin-bottom: 82px;
+  }
+
+  .overlay_text {
+    width: 276px;
+    height: 325px;
+    padding: 20px;
+  }
+
+  .btn_buy_now {
+    width: 122px;
+    height: 50px;
+    margin-top: 0;
+    border-radius: 8px;
+  }
+
+  .item.hidden {
+    display: block;
+  }
+}
