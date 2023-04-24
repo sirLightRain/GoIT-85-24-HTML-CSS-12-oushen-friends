@@ -1,5 +1,5 @@
 .hero-color {
-    padding-top: 122px;
+    /* padding-top: 122px; */
     padding-bottom: 40px;
     background-color: #141414;
 }
@@ -57,6 +57,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .hero-color {
+        padding-top: 10px;
+    }
 
     .hero-title {
         font-size: 60px;
@@ -89,6 +92,9 @@
     } 
 }
 @media screen and (min-width: 1280px) {
+    .hero-color {
+        padding-top: 10px;
+    }
 
     .container-title {
         display: flex;
