@@ -21,6 +21,7 @@
 
 /* Тут підключаємо Sale */
 @import url('./sale.mob-tab.css');
+@import url('./sale.css');
 /* Тут підключаємо footer */
 @import url('./footer.css');
 
