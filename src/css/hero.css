@@ -56,15 +56,8 @@
     color: var(--light-color);
 }
 
-/*  */
-@media screen and (min-width: 375px) {
-
-}
 @media screen and (min-width: 768px) {
-    .container {
-        padding-top: 148px;
-        padding-bottom: 64px;
-    }
+
     .hero-title {
         font-size: 60px;
         line-height: 1.03;
@@ -96,11 +89,7 @@
     } 
 }
 @media screen and (min-width: 1280px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 80px;
-    }
+
     .container-title {
         display: flex;
         width: 100%;
