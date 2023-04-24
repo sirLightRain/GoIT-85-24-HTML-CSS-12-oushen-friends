@@ -42,11 +42,16 @@
     </symbol>
 
     <symbol id="icon-logo2" viewBox="0 0 30 32">
-<path fill="#000" style="fill: var(--color1, #000)" d="M20.989 15.674l-3.46-7.927-0.755-0.523-0.885-0.282-1.197-0.322-1.405 0.604-0.937 0.523 3.538 7.927h5.1z"></path>
-<path fill="#000" style="fill: var(--color1, #000)" d="M8.571 13.023l3.46 7.945 0.755 0.524 0.885 0.282 1.197 0.323 1.405-0.605 0.937-0.524-3.538-7.945h-5.1z"></path>
-<path fill="#fff" style="fill: var(--color2, #fff)" d="M12.166 7.851l-5.372 7.765 5.372 0.058 3.883-7.823c0.273-0.8 1.126-0.333 1.518 0-1.677-3.073-4.3-1.28-5.402 0z"></path>
-<path fill="#fff" style="fill: var(--color2, #fff)" d="M17.372 20.867l5.372-7.765-5.372-0.058-3.883 7.823c-0.273 0.8-1.126 0.333-1.518 0 1.677 3.073 4.3 1.28 5.402 0z"></path>
-</symbol>
+    <path fill="#000" style="fill: var(--color1, #000)" d="M20.989 15.674l-3.46-7.927-0.755-0.523-0.885-0.282-1.197-0.322-1.405 0.604-0.937 0.523 3.538 7.927h5.1z"></path>
+    <path fill="#000" style="fill: var(--color1, #000)" d="M8.571 13.023l3.46 7.945 0.755 0.524 0.885 0.282 1.197 0.323 1.405-0.605 0.937-0.524-3.538-7.945h-5.1z"></path>
+    <path fill="#fff" style="fill: var(--color2, #fff)" d="M12.166 7.851l-5.372 7.765 5.372 0.058 3.883-7.823c0.273-0.8 1.126-0.333 1.518 0-1.677-3.073-4.3-1.28-5.402 0z"></path>
+    <path fill="#fff" style="fill: var(--color2, #fff)" d="M17.372 20.867l5.372-7.765-5.372-0.058-3.883 7.823c-0.273 0.8-1.126 0.333-1.518 0 1.677 3.073 4.3 1.28 5.402 0z"></path>
+    </symbol>
+
+    <symbol id="icon-x" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800" d="M24 8l-16 16"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800" d="M8 8l16 16"></path>
+    </symbol>
 
   </defs>
 </svg>

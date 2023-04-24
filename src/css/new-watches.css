@@ -1,0 +1,123 @@
+.new-watches {
+  padding-bottom: 80px;
+}
+
+.new-watches-title {
+  font-family: 'Epilogue-light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.06em;
+  color: rgba(20, 20, 20, 0.4);
+}
+
+.new-watches-text {
+  font-family: 'Epilogue-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #141414;
+}
+
+@media (max-width: 767px) {
+  .new-watches-title {
+    margin-bottom: 8px;
+  }
+
+  .new-watches-text {
+    margin-bottom: 40px;
+    white-space: normal;
+  }
+
+  .img-contain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .new-watches-img {
+    width: 335px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .new-watches {
+    padding-bottom: 128px;
+  }
+
+  .new-watches-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.16px;
+    letter-spacing: 0.06em;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 8px;
+  }
+
+  .new-watches-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1e2827;
+    margin-bottom: 40px;
+    width: 448px;
+  }
+
+  .img-contain {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .new-watches-img {
+    width: 342px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .new-watches {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .new-watches-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.16px;
+    letter-spacing: 0.06em;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 15px;
+  }
+
+  .new-watches-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1e2827;
+    margin-bottom: 40px;
+    width: 448px;
+  }
+
+  .img-contain {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .new-watches-img {
+    width: 576px;
+    height: 422px;
+  }
+}
