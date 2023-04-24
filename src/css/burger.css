@@ -8,7 +8,8 @@
   }
 
   .tel-btn,
-  .header-contact {
+  .header-contact,
+  .header-tel{
     display: none;
   }
 
@@ -126,16 +127,9 @@
     transition: transform var(--transition-var);
     display: block;
   }
-
-  .mobile-link:hover,
-  .mobile-link:focus {
-    transform: scale(1.25);
-  }
 }
 
-
 @media screen and (min-width: 768px) {
-  .mobile-menu, 
   .mobile-menu__container,
   .mobile-menu-open {
   display: none;
@@ -156,7 +150,7 @@
   
   color: var(--light-color);
   position: relative;
-  left: 15px;
+  left: 12px;
 }
   
 .header-text:before {
@@ -217,8 +211,26 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--light-color)
+  color: var(--light-color);
+  transition: transform var(--transition-var);
   }
+
+  .header-navigation-link {
+    transition: transform var(--transition-var);
+    display: block;
+  }
+
+  .header-navigation-link:hover,
+  .header-navigation-link:focus{
+    transform: scale(1.15);
+    display: block;
+  }
+
+  .header-navigation-link:hover,
+  .header-navigation-link:focus {
+    transform: scale(1.25);
+    display: block
+}
 
 .header-contact {
   padding-top: 18px;
