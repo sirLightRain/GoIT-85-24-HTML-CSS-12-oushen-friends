@@ -53,11 +53,20 @@ img {
 
 body {
   font-family: Epilogue, sans-serif;
-} 
+}
 
 /* ====================* Медіа правила для контейнерів *==================== */
+/* --- Before Mobile container ---- */
+@media  screen and (max-width: 375px) {
+  .container {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
 /* --- Mobile container ---- */
-@media  screen and (min-width: 375px) {
+@media screen and (min-width: 375px) {
   .container {
       width: 375px;
       padding-left: 20px;
@@ -67,7 +76,7 @@ body {
   }
 }
 /* --- Planshet container ---- */
-@media  screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
       width: 768px;
       padding-left: 32px;
