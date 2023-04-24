@@ -1,6 +1,6 @@
 
 .sale {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     padding-bottom: 80px;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .sale-title {
-    font-family: 'Epilogue-semibold';
-    /* font-weight: 600; */
+    font-family: 'Epilogue-semibold', Verdana, Geneva, Tahoma, sans-serif;
+
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: -0.02em;
@@ -63,21 +63,11 @@
     background-color: var(--dark-color);
 }
 
-/* .sale-img-watch-1 {
-    background-color: #141414;
-    position: relative;
-    background-image: url(../img/img-watch1.jpg);
-    width: 146px;
-    height: 146px;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
 .sale-subtitle {
     font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
-    /* width: 335px; */
+
     height: 48px;
-    /* font-weight: 400; */
+
     font-size: 24px;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -177,21 +167,9 @@
     color: rgba(20, 20, 20, 0.5);
 }
 
-/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .sale-img-watch-1 {
-        background-image: url(../img/img-watch1.jpg);
-    }
-} */
-
 @media screen and (min-width: 768px) {
-    /* .sale-img-watch-1 {
-        background-image: url(../img/img-watch1.jpg);
-    } */
 
 .sale {
-    padding-top: 128px;
     padding-bottom: 128px;
 }
 
@@ -206,7 +184,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .sale-title {
-    /* font-family: 'Epilogue-semi', Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -258,17 +235,3 @@ screen and (min-resolution: 2dppx) and (max-width: 1199px) {
         ;
     }
 }
-
-/* @media screen and (min-width: 1200px) {
-    .sale-img-watch-1 {
-        background-image: url(../img/watch-1.jpg);
-    }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
-screen and (min-resolution: 192dpi) and (max-width: 1440px),
-screen and (min-resolution: 2dppx) and (max-width: 1440px) {
-    .sale-img-watch-1 {
-        background-image: url(../img/watch-1.jpg);
-    }
-} */
