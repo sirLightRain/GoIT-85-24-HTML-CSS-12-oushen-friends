@@ -36,47 +36,6 @@ body {
     text-decoration: none;
 }
 
-/*-----------------ADAPTIVE-SALE-IMG--------------------*/
-@media screen and (min-width: 375px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1.png);
-    }
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-       screen and (min-resolution: 192dpi) and (max-width: 767px),
-       screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1x2.png);
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1.png);
-    }
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1279px),
-       screen and (min-resolution: 192dpi) and (max-width: 1279px),
-       screen and (min-resolution: 2dppx) and (max-width: 1279px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1x2.png);
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1.png);
-    }
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
-       screen and (min-resolution: 192dpi) and (max-width: 1440px),
-       screen and (min-resolution: 2dppx) and (max-width: 1440px) {
-    .sale-img-clock-1 {
-        background-image: url(../img/clock-1x2.png);
-    }
-}
-/*-----------------ADAPTIVE-SALE-IMG--------------------*/
-
 /*-----------------------------------------SALE-DESCTOP--------------------------------------------------*/
 @media screen and (min-width: 1280px) {
 .container {
@@ -118,6 +77,13 @@ body {
     height: 146px;
     background-position: center center;
     background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
+       screen and (min-resolution: 192dpi) and (max-width: 1440px), 
+       screen and (min-resolution: 2dppx) and (max-width: 1440px) {
+    .sale-img-clock-1 {
+        background-image: url(../img/clock-1x2.png);
+    }
 }
 /*-----------------IMG-CLOCK--------------------*/
 
