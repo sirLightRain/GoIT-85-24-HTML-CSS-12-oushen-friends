@@ -69,6 +69,11 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+.sale-list li img {
+    width: 146px;
+    height: 146px;
+    object-fit: contain;
+  }
 .sale-img-clock-1 {
     background-color: var(--darck-color);
     position: relative;
@@ -77,6 +82,7 @@ body {
     height: 146px;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
        screen and (min-resolution: 192dpi) and (max-width: 1440px), 
