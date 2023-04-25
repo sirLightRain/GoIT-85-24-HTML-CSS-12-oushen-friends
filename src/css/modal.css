@@ -256,7 +256,7 @@
 /*! ======== TABLET ========*/
 @media screen and (min-width: 768px) {
   .modal {
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
   }
 
   .modal-container {
