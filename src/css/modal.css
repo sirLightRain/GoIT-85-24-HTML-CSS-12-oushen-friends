@@ -255,6 +255,10 @@
 
 /*! ======== TABLET ========*/
 @media screen and (min-width: 768px) {
+  .modal {
+    transform: translateY(-50%);
+  }
+
   .modal-container {
     flex-direction: row;
     justify-content: flex-start;
