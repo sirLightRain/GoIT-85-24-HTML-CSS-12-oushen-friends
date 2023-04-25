@@ -29,6 +29,10 @@
   transform: translate(0px, 0px);
 }
 
+.catalog_section_img {
+  max-width: 100%;
+}
+
 .overlay_text_topic {
   font-family: 'Epilogue';
   line-height: 1.29;
