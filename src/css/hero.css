@@ -1,3 +1,11 @@
+.hero-pic-slider {
+    max-width: 100%;
+}
+
+.hero-pic {
+    max-width: 100%;
+}
+
 .hero-color {
     /* padding-top: 122px; */
     padding-bottom: 40px;

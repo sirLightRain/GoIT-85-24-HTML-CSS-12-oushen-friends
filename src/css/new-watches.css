@@ -39,9 +39,13 @@
     gap: 20px;
   }
 
-  .new-watches-img {
+  /* .new-watches-img {
     width: 335px;
     height: 260px;
+  } */
+
+  .new-watch-pic {
+    max-width: 100%;
   }
 }
 
