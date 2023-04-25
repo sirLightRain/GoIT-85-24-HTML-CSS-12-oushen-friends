@@ -158,6 +158,7 @@
 .sale-info-watch-text-1 {
     font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
     width: 335px;
+    /* max-width: 100%; */
     height: 132px;
     font-size: 14px;
     line-height: 1.29;
