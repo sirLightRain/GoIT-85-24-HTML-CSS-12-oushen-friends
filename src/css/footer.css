@@ -2,6 +2,8 @@
 .footer {
     background-color: var(--dark-green);
     color: var(--light-color);
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .footer-block {
@@ -18,7 +20,6 @@
 /* === Adress block === */
 .footer-logo-adress-block {
     display: block;
-    padding-top: 40px;
 
     font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
 
@@ -64,7 +65,7 @@
 /* === Блок навігації: About as і т.д. === */
 .footer-navigation-block {
     display: block;
-    padding-top: 40px;
+    
     margin-left: auto;
 
     font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
@@ -93,8 +94,9 @@
 
 /* === Блок соціальних мереж === */
 .footer-social-block {
-    padding-top: 40px;
-    padding-bottom: 80px;
+   
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .social-list {
@@ -135,7 +137,6 @@
 /* === Блок: footer-all-rights-reserwed === */
 .footer-all-rights-reserwed {
     display: block;
-    padding-bottom: 20px;
 
     font-family: 'Epilogue-Regular', Verdana, Geneva, Tahoma, sans-serif;
     
@@ -156,10 +157,12 @@
 
 /* === Точка перелому на таблет 768 === */
 @media screen and (min-width: 768px) {
-    .footer-block {
-        
+    .footer {
         padding-top: 80px;
-        padding-bottom: 152px;
+    }
+
+    .footer-block {
+        margin-bottom: 152px;
     }
 
     .footer-logo {
@@ -181,6 +184,7 @@
     }
 
     .footer-social-block {
+        margin: 0px;
         padding-top: 0;
         padding-bottom: 0;
         margin-left: auto;
@@ -212,6 +216,10 @@
 }
 /* === Точка перелому на таблет 1280 === */
 @media screen and (min-width: 1280px) {
+    .footer-block {
+        margin-bottom: 174px;
+    }
+
    .footer-navigation-block{
     padding-left: 0;
     margin-left: 355px;
