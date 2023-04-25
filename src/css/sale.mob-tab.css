@@ -235,6 +235,25 @@
     height: 143px;
 }
 
+.big-watch-standart {
+    background-color: var(--dark-color);
+    position: relative;
+    background-image: url('../img/clock-1.png');
+    width: 146px;
+    height: 146px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-device-pixel-ratio: 2), 
+screen and (min-resolution: 192dpi), 
+screen and (min-resolution: 2dppx) {
+    .big-watch-standart {
+        background-image: url('../img/clock-1x2.png');
+    } 
+}
+
 }
 
 @media screen and (min-width: 1280px) {
