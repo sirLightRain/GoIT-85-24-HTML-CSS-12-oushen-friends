@@ -7,13 +7,13 @@
 }
 
 .hero-color {
-    /* padding-top: 122px; */
+    
     padding-bottom: 40px;
     background-color: #141414;
 }
 .hero-title {
     font-family: 'Epilogue-semibold',sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     font-size: 38px;
     line-height: 1.05;
     letter-spacing: -0.04em;
@@ -67,7 +67,7 @@
 
 @media screen and (min-width: 768px) {
     .hero-color {
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
     .hero-title {
