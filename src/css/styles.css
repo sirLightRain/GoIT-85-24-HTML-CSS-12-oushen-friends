@@ -11,17 +11,18 @@
 
 
 /* Тут підключаємо HERO */
-
+@import url('./hero.css');
 /* Тут підключаємо About us */
 @import url('./about.css');
 /* Тут підключаємо Catalog */
 @import url('./catalog.css');
 /* Тут підключаємо Catalog-modal-windov */
+@import url('./modal.css');
 
 @import url('./new-watches.css');
 
 /* Тут підключаємо Sale */
-
+@import url('./sale.mob-tab.css');
 /* Тут підключаємо footer */
 @import url('./footer.css');
 
@@ -38,7 +39,7 @@
   font-family: 'Epilogue-regular';
   src: url('../fonts/Epilogue-Regular.woff2') format('woff2'),
     url('../fonts/Epilogue-Regular.woff') format('woff');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -66,17 +67,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-/* ====================* Опис основних форматів шрифту! *==================== */
-/* --- Hero ---- */
-.hero-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1.03;
-
-  letter-spacing: -0.04em;
-
-  /* color: var(--light-color); */
 }
