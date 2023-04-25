@@ -1,10 +1,3 @@
-@media screen and (min-width: 768px) {
-  .mobile-menu,
-  .page-header-mobile {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .container {
     max-width: 375px;
@@ -14,10 +7,16 @@
     margin-right: auto;
   }
 
+  .tel-btn,
+  .header-contact,
+  .header-tel{
+    display: none;
+  }
+
   .header {
     background-color: var(--dark-color);
     padding-top: 29px;
-    padding-bottom: 69px;
+    padding-bottom: 74px;
   }
 
   .logo {
@@ -128,9 +127,185 @@
     transition: transform var(--transition-var);
     display: block;
   }
+}
 
-  .mobile-link:hover,
-  .mobile-link:focus {
-    transform: scale(1.25);
+.header-navigation-block {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__container,
+  .mobile-menu-open {
+    display: none;
   }
+
+  .header-tel {
+    margin-top: 20px;
+    margin-left: auto;
+
+    padding-top: 18px;
+    width: 159px;
+    height: 48px;
+
+    font-size: 9px;
+    line-height:1.33;
+    text-align: center;
+    text-transform: uppercase;
+    border-color: var(--dark-green);
+    border-radius: 8px;
+    background-color: #1E2827;
+    justify-content: center;
+    color: var(--light-color);
+    cursor: pointer;
+
+    transition: outline var(--transition-var);
+  }
+
+  .header-tel:hover,
+  .header-tel:focus {
+    outline: 1px solid var(--light-color);
+  }
+
+.header {
+  background-color: var(--dark-color);
+  padding-bottom: 95px;
+  }
+
+.header-text {
+  font-family: 'Epilogue-regular', Verdana, 'Times New Roman', Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  
+  color: var(--light-color);
+  position: relative;
+  left: 12px;
+}
+  
+.header-text:before {
+  content: '';
+  background: url('../img/logo-cropped.svg') no-repeat;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  float: left;
+  margin: 0 4px 0 0;
+  position: absolute;
+  margin-left: -16px;
+  top: -3px;
+}
+  
+.mobile-list {
+  display: flex;
+  gap: 40px;
+  font-size: 15px;
+  padding-top: 38px;
+  }
+  
+.logo{
+  position: absolute;
+  padding-left: 32px;
+  padding-top: 36px;
+  }
+  
+.header-text {
+  position: absolute;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+  padding-left: 4px;
+  color: var(--light-color);
+  /* padding-left: 35px */
+  }
+  
+.header-navigation-block {
+  display: flex;
+  margin-left: 235px;
+  font-family: 'Epilogue-regular', Verdana, 'Times New Roman', Arial;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  }
+  
+.hedear-navigation-link {
+  font-family: 'Epilogue-regular', Verdana, 'Times New Roman', Arial;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  transition: transform var(--transition-var);
+  }
+
+  .header-navigation-link {
+    transition: transform var(--transition-var);
+    display: block;
+  }
+
+  .header-navigation-link:hover,
+  .header-navigation-link:focus{
+    transform: scale(1.15);
+    display: block;
+  }
+
+  .header-navigation-link:hover,
+  .header-navigation-link:focus {
+    transform: scale(1.25);
+    display: block
+}
+
+.header-contact {
+  padding-top: 18px;
+  width: 159px;
+  height: 48px;
+
+  font-size: 9px;
+  line-height:1.33;
+  text-align: center;
+  text-transform: uppercase;
+  border-color: var(--dark-green);
+  border-radius: 8px;
+  background-color: #1E2827;
+  justify-content: center;
+  color: var(--light-color);
+  cursor: pointer;
+
+  transition: outline var(--transition-var);
+  }
+
+  .header-contact:hover,
+  .header-contact:focus {
+    outline: 1px solid var(--light-color);
+  }
+
+.tel-btn {
+  margin-top: 20px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent; 
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+.header-navigation-block {
+  margin-left: 335px;
+  }
+
+.header-text {
+  font-size: 15px;
+}
+
+.tel-btn {
+  padding-left: 380px;
+}
 }

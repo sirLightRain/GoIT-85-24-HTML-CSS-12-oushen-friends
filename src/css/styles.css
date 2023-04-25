@@ -8,8 +8,10 @@
 /* Так підключаємо header. Все інше за аналогією. */
 @import url('./burger.css');
 
-/* Тут підключаємо HERO */
 
+
+/* Тут підключаємо HERO */
+@import url('./hero.css');
 /* Тут підключаємо About us */
 @import url('./about.css');
 /* Тут підключаємо Catalog */
