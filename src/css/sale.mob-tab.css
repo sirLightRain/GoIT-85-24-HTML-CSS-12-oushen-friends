@@ -1,6 +1,6 @@
 
 .sale {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     padding-bottom: 80px;
 }
 
@@ -62,16 +62,6 @@
 .sale-list-big > .list {
     background-color: var(--dark-color);
 }
-
-/* .sale-img-watch-1 {
-    background-color: #141414;
-    position: relative;
-    background-image: url(../img/img-watch1.jpg);
-    width: 146px;
-    height: 146px;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 
 .sale-subtitle {
     font-family: 'Epilogue-regular', Verdana, Geneva, Tahoma, sans-serif;
@@ -191,7 +181,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     } */
 
 .sale {
-    padding-top: 128px;
+    /* padding-top: 128px; */
     padding-bottom: 128px;
 }
 
@@ -250,25 +240,156 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
-screen and (min-resolution: 192dpi) and (max-width: 1199px),
-screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-    .sale-img-watch-1 {
-        background-image: url(../img/img-watch1.jpg);
-        ;
+
+@media screen and (min-width: 1280px) {
+    .sale {
+        padding-bottom: 160px;
+    }
+
+    .sale-flex-elements {
+        display: flex;
+        justify-content: center;
+        width: 1176px;
+        gap: 40px;
+    }
+
+    .sale-flex-elements-img {
+        display: flex;
+        gap: 20px;
+    }
+
+    .sale-title {
+        /* font-weight: 600; */
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: var(--darck-green);
+        margin-bottom: 80px;
+    }
+
+    .sale-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sale-list li img {
+        width: 146px;
+        height: 146px;
+        object-fit: contain;
+    }
+
+    .big-watch-standart {
+        background-color: var(--darck-color);
+        position: relative;
+        background-image: url(../img/clock-1.png);
+        width: 146px;
+        height: 146px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi), 
+       screen and (min-resolution: 2dppx) {
+        .big-watch-standart {
+        background-image: url(../img/clock-1x2.png);
+        }
+    }
+
+    .sale-subtitle {
+        width: 369px;
+        height: 80px;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: var(--darck-color);
+        margin-bottom: 8px;
+    }
+
+    .sale-subtitle-item {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        color: var(--rgba-secondary-color-grey);
+        margin-bottom: 16px;
+    }
+
+    .sale-list-700_1000 {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .sale-subtitle-700 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: var(--darck-color);
+    }
+
+    .sale-subtitle-item-1000 {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.02em;
+        text-decoration-line: line-through;
+        color: var(--rgba-secondary-color-grey);
+    }
+
+    .sale-info-watch {
+        max-width: 370px;
+    }
+
+    .sale-info-watch-title {
+        position: relative;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: var(--darck-color);
+        margin-bottom: 17px;
+    }
+
+    .sale-info-watch-title::after {
+        content: "";
+        width: 16px;
+        height: 0;
+        border-top: 1px solid var(--darck-color);
+        position: absolute;
+        left: 353px;
+        bottom: 13px;
+    }
+
+    .sale-info-watch-title::before {
+        content: "";
+        width: 369px;
+        top: -8px;
+        border-top: 1px solid var(--darck-color);
+        position: absolute;
+    }
+
+    .sale-info-watch-text-1 {
+        width: 369px;
+        height: 126px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        color: var(--rgba-secondary-color-grey);
+        margin-bottom: 20px;
+    }
+
+    .sale-info-watch-text-2 {
+        width: 162px;
+        height: 143px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        color: var(--rgba-secondary-color-grey);
     }
 }
 
-/* @media screen and (min-width: 1200px) {
-    .sale-img-watch-1 {
-        background-image: url(../img/watch-1.jpg);
-    }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
-screen and (min-resolution: 192dpi) and (max-width: 1440px),
-screen and (min-resolution: 2dppx) and (max-width: 1440px) {
-    .sale-img-watch-1 {
-        background-image: url(../img/watch-1.jpg);
-    }
-} */
