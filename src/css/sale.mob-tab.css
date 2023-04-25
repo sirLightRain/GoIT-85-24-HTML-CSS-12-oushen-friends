@@ -1,3 +1,6 @@
+.hidden-desc {
+    display: none;
+}
 
 .sale {
     /* padding-top: 80px; */
@@ -240,8 +243,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 }
 
-
 @media screen and (min-width: 1280px) {
+    .hidden-desc {
+        display: block;
+    }
+}
+/* @media screen and (min-width: 1280px) {
     .sale {
         padding-bottom: 160px;
     }
@@ -259,7 +266,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 
     .sale-title {
-        /* font-weight: 600; */
+        
         font-size: 40px;
         line-height: 44px;
         letter-spacing: -0.02em;
@@ -391,5 +398,5 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         letter-spacing: -0.01em;
         color: var(--rgba-secondary-color-grey);
     }
-}
+} */
 
