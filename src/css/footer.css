@@ -36,13 +36,13 @@
 }
 
 .footer-tel {
-    transition: transform var(--transition-var);
+    transition: color var(--transition-var);
 }
 
 .footer-tel:hover,
 .footer-tel:focus
 {
-    transform: scale(1.15);
+    color: var(--color-for-animation);
 }
 
 .footer-adress {
@@ -53,13 +53,13 @@
 }
 
 .footer-adress-link{
-    transition: transform var(--transition-var);
+    transition: color var(--color-for-animation);
     display: block;
 }
 
 .footer-adress-link:hover,
 .footer-adress-link:focus{
-    transform: scale(1.15);
+    color: var(--color-for-animation);
 }
 
 /* === Блок навігації: About as і т.д. === */
@@ -83,13 +83,16 @@
 }
 
 .footer-navigation-link {
-    transition: transform var(--transition-var);
+    /* transition: transform var(--transition-var); */
+    transition: color var(--transition-var);     
     display: block;
 }
 
 .footer-navigation-link:hover,
 .footer-navigation-link:focus {
-    transform: scale(1.25);
+    /* transform: scale(1.25); */
+    color: var(--color-for-animation);
+    
 }
 
 /* === Блок соціальних мереж === */

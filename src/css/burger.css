@@ -243,25 +243,14 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--light-color);
-  transition: transform var(--transition-var);
-  }
-
-  .header-navigation-link {
-    transition: transform var(--transition-var);
-    display: block;
+  transition: color var(--transition-var);
   }
 
   .header-navigation-link:hover,
   .header-navigation-link:focus{
-    transform: scale(1.15);
+    color: var(--color-for-animation);
     display: block;
   }
-
-  .header-navigation-link:hover,
-  .header-navigation-link:focus {
-    transform: scale(1.25);
-    display: block
-}
 
 .header-contact {
   padding-top: 18px;

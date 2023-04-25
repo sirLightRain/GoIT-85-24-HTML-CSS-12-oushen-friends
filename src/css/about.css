@@ -3,6 +3,10 @@
   padding-bottom: 80px;
 }
 
+.section-color {
+  background-color: var(-rgba-secondary-color-grey);
+}
+
 .about-title {
   font-family: 'Epilogue-semibold';
   font-weight: 600;
@@ -100,5 +104,9 @@
 
   .about-text {
     width: 426px;
+  }
+
+  .section-color {
+    background-color: var(-rgba-secondary-color-grey);
   }
 }
