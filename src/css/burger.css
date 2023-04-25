@@ -247,6 +247,12 @@
   justify-content: center;
   color: var(--light-color);
   cursor: pointer;
+
+  }
+
+  .header-contact:hover,
+  .header-contact:focus {
+    border: 1px solid var(--light-color);
   }
 
 .tel-btn {
