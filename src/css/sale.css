@@ -1,47 +1,7 @@
-/* :root { 
-    --darck-color: #141414;
-    --darck-green: #1E2827;
-    --rgba-secondary-color-grey: rgba(20, 20, 20, 0.5);
-} 
-h1, 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-ul {
-    margin: 0;
-    padding-left: 0;
-}
-img {
-    display: block;
-}
-button {
-    cursor: pointer;
-}
-body {
-    font-family: 'Epilogue', sans-serif;
-    color: var(--darck-color);
-}
-.container {
-    margin: 0 auto;
-}
-.list {
-    list-style-type: none;
-}
-.link {
-    text-decoration: none;
-} */
 
 /*-----------------------------------------SALE-DESCTOP--------------------------------------------------*/
 @media screen and (min-width: 1280px) {
-/* .container {
-    width: 1176px;
-    padding: 0 52px;
-} */
+
 .hidden-mob-tab {
     display: none;
 }
@@ -88,9 +48,9 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1440px),
-       screen and (min-resolution: 192dpi) and (max-width: 1440px), 
-       screen and (min-resolution: 2dppx) and (max-width: 1440px) {
+@media screen and (min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi), 
+       screen and (min-resolution: 2dppx) {
     .sale-img-clock-1 {
         background-image: url(../img/clock-1x2.png);
     }
