@@ -4,6 +4,7 @@
             <h1 class="hero-title">
                 Welcome to our collection of premium watches
             </h1>
+            <!-- desc-hero-text -->
             <p class="hero-text-invisible">
                 Our watches are not just timepieces, but also an expression of
                 your personality and lifestyle. From classic designs to
@@ -129,8 +130,8 @@
                     modern ones, we have a watch to suit every taste and occasion.
                 </p>
             </div>
-            <!-- slider -->
-            <div class="swiper-buttons">
+            <!-- Swiper butto picture -->
+            <!-- <div class="swiper-buttons">
                 <div class="button-prev">
                     <svg class="icon-chevron left" width="32px" height="32px">
                         <use href="./img/sprite.svg#icon-chevron-left"></use>
@@ -141,13 +142,14 @@
                         <use href="./img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                 </div>
-            </div>
+            </div> -->
+            <!-- Hero text -->
             <p class="hero-text">
                 Our watches are not just timepieces, but also an expression of
                 your personality and lifestyle. From classic designs to
                 modern ones, we have a watch to suit every taste and occasion.
             </p>
-        
+        <!-- Main hero picture -->
         <picture>
             <source 
                 srcset="./img/desktop-hero.jpg 1x, 
@@ -169,18 +171,19 @@
         </picture> 
         </div>
     </div>
+    <!-- Swiper script initialization -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            keyboard: {
+                enabled: true,
+            },
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+      </script>
 </section>
-<!-- <script>
-    const swiper = new Swiper(".mySwiper",{
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        keyboard: {
-            enabled: true,
-        },
-        navigation: {
-            nextEl: "button-next",
-            nextEl: "button-prev"
-        },
-    });
-</script> -->
