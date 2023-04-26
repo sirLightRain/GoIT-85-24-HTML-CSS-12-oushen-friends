@@ -8,8 +8,6 @@
 /* Так підключаємо header. Все інше за аналогією. */
 @import url('./burger.css');
 
-
-
 /* Тут підключаємо HERO */
 @import url('./hero.css');
 /* Тут підключаємо About us */
@@ -60,10 +58,10 @@
   --light-color: #ffffff;
   --dark-green: #1e2827;
   --rgba-secondary-color-grey: rgba(20, 20, 20, 0.5);
-  --color-for-animation: rgba(131, 212, 232, 0.93);
+  --color-for-animation: rgba(71, 170, 148, 0.93);
 
   /* Змінна для підключення анімації */
-  --transition-var: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

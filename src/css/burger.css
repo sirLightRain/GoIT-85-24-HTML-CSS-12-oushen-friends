@@ -8,8 +8,8 @@
   }
 
   .tel-btn,
-  .header-contact,
-  .header-tel{
+  /* .header-contact, */
+  .header-tel {
     display: none;
   }
 
@@ -140,6 +140,7 @@
   }
 
   .header-tel {
+    display: block;
     margin-top: 20px;
     margin-left: auto;
 
@@ -159,13 +160,13 @@
     cursor: pointer;
 
     /* transition: border 5000ms linear; */
-    transition: outline 10000ms linear;
+    transition: outline var(--transition-var), transform var(--transition-var);
   }
 
   .header-tel:hover,
   .header-tel:focus {
     outline: 1px solid var(--light-color);
-    /* border: 1px solid var(--light-color); */
+    transform: scale(1.05);
   }
 
 .header {
@@ -234,12 +235,12 @@
   color: var(--light-color);
   }
   
-.hedear-navigation-link {
+.header-navigation-link {
   font-family: 'Epilogue-regular', Verdana, 'Times New Roman', Arial;
   font-style: normal;
   font-weight: 400;
   text-align: center;
-  font-size: 9px;
+  font-size: 15px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -248,15 +249,13 @@
   transition: color var(--transition-var);
   }
 
-  
-
   .header-navigation-link:hover,
   .header-navigation-link:focus {
     color: var(--color-for-animation);
     /* display: block; */
   }
 
-.header-contact {
+/* .header-contact {
   padding-top: 18px;
   width: 159px;
   height: 48px;
@@ -273,12 +272,12 @@
   cursor: pointer;
 
   transition: outline 500ms linear;
-  }
+  } */
 
-  .header-contact:hover,
+  /* .header-contact:hover,
   .header-contact:focus {
     outline: 1px solid var(--light-color);
-  }
+  } */
 
 .tel-btn {
   margin-top: 20px;
