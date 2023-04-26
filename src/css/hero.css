@@ -1,3 +1,5 @@
+
+
 .hero-pic-slider {
     max-width: 100%;
 }
@@ -33,9 +35,17 @@
 .hero-text-invisible {
     display: none;
 }
+
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
+
 .swiper-buttons {
     display: flex;
+    gap: 12px;
 }
+
 .button-prev {
     height: 32px;
     width: 32px;
