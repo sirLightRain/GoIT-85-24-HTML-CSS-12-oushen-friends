@@ -9,7 +9,7 @@
 }
 
 .hero-color {
-    
+    position: relative;
     padding-bottom: 40px;
     background-color: #141414;
 }
@@ -36,33 +36,63 @@
     display: none;
 }
 
-/* .swiper {
-    width: 600px;
-    height: 300px;
-  } */
+.swiper {
+    /* position: relative; */
+    /* width: 600px; */
+    /* height: 300px; */
+  }
+
+.swiper-slide {
+    width: 266px;
+    height: 200px;
+}
 
 .swiper-buttons {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
     gap: 12px;
 }
 
-.button-prev {
+.button-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 32px;
     width: 32px;
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
+    color: rgba(255, 255, 255, 0.5);
+
+    transition: border-color var(--transition-var), color var(--transition-var);
 }
-.button-next {
+
+.button-p:hover,
+.button-p:focus {
+    border-color: var(--light-color);
+    color: var(--light-color);
+}
+
+.button-n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 32px;
     width: 32px;
-    border: 1px solid var(--light-color);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
+    color: rgba(255, 255, 255, 0.5);
+
+    transition: border-color var(--transition-var), color var(--transition-var);
 }
-.swiper-buttons {
-    margin-top: 20px;
-    margin-bottom: 40px;
+
+.button-n:hover,
+.button-n:focus {
+    border-color: var(--light-color);
+    color: var(--light-color);
 }
+
 .tabl-hero-text {
     display: none;
     font-family: 'Epilogue-light', sans-serif;
@@ -76,6 +106,13 @@
 }
 
 @media screen and (min-width: 768px) {
+    .swiper-buttons {
+        position: absolute;
+        z-index: 10;
+    }
+}
+/* 
+@media screen and (min-width: 768px) {
     .hero-color {
         padding-top: 0px;
     }
@@ -85,32 +122,52 @@
         line-height: 1.03;
         max-width: 653px;
     }
-    .button-prev {
+
+    .swiper-slide {
+        width: 436px;
+        height: 255px;
+    }
+
+    .swiper-buttons {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        bottom: 9px;
+        
+        margin-bottom: 0;
+    }
+    
+    .button-p {
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .button-next {
+
+    .button-n {
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .mySwiper {
         display: flex;
         align-items: center;
     }
+
     .tabl-hero-text {
         display: block;
     }
+
     .hero-text {
         display: none;
     } 
-}
-@media screen and (min-width: 1280px) {
+} */
+
+/* @media screen and (min-width: 1280px) {
     .hero-color {
         padding-top: 10px;
     }
@@ -139,7 +196,6 @@
         display: none;
     }
     .desktop-container {
-        position: relative;
         display: flex;
         align-items: center;
     }
@@ -155,4 +211,4 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-}
+} */

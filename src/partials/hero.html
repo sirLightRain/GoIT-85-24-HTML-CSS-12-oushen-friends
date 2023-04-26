@@ -4,12 +4,6 @@
             <h1 class="hero-title">
                 Welcome to our collection of premium watches
             </h1>
-            <!-- desc-hero-text -->
-            <p class="hero-text-invisible">
-                Our watches are not just timepieces, but also an expression of
-                your personality and lifestyle. From classic designs to
-                modern ones, we have a watch to suit every taste and occasion.
-            </p>
         </div>   
         <div class="desktop-container">
             <!-- slider -->
@@ -20,9 +14,14 @@
                     <div class="swiper-slide">
                         <picture>
                             <source 
+                                srcset="../img/swiper/slider-tab-watch-1.jpg 1x,
+                                        ../img/swiper/slider-tab-watch-1@2x.jpg 2x"
+                                media="(min-width: 768px)"
+                                alt="#">
+                            <!-- <img src="../img/swiper/slider-tab-watch-1.jpg" alt="#"> -->
+                            <source 
                                 srcset="../img/swiper/slider-mob-watch-1.jpg 1x,
                                         ../img/swiper/slider-mob-watch-1@2x.jpg 2x"
-                                src="../img/swiper/slider-mob-watch-1.jpg" 
                                 media="(max-width: 767px)"
                                 alt="#">
                             <img src="../img/swiper/slider-mob-watch-1.jpg" alt="#">
@@ -31,35 +30,62 @@
                     </div>
             
                     <div class="swiper-slide">
-                        <img src="../img/swiper/slider-mob-watch-2.jpg" alt="#">
+                        <picture>
+                            <source 
+                                srcset="../img/swiper/slider-mob-watch-2.jpg 1x,
+                                        ../img/swiper/slider-mob-watch-2@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                alt="#">
+                            <img src="../img/swiper/slider-mob-watch-2.jpg" alt="#">
+                        </picture>
+                        
                     </div>
             
                     <div class="swiper-slide">
-                        <img src="../img/swiper/slider-mob-watch-3.jpg" alt="#">
+                        <picture>
+                            <source 
+                                srcset="../img/swiper/slider-mob-watch-3.jpg 1x,
+                                        ../img/swiper/slider-mob-watch-3@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                alt="#">
+                            <img src="../img/swiper/slider-mob-watch-3.jpg" alt="#">
+                        </picture>
+                        
                     </div>
             
                     <div class="swiper-slide">
-                        <img src="../img/swiper/slider-mob-watch-4.jpg" alt="#">
+                        <picture>
+                            <source 
+                                srcset="../img/swiper/slider-mob-watch-4.jpg 1x,
+                                        ../img/swiper/slider-mob-watch-4@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                alt="#">
+                            <img src="../img/swiper/slider-mob-watch-4.jpg" alt="#">
+                        </picture>
+                        
                     </div>
             
                     <div class="swiper-slide">
-                        <img src="../img/swiper/slider-mob-watch-5.jpg" alt="#">
+                        <picture>
+                            <source 
+                                srcset="../img/swiper/slider-mob-watch-5.jpg 1x,
+                                        ../img/swiper/slider-mob-watch-5@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                                alt="#">
+                            <img src="../img/swiper/slider-mob-watch-5.jpg" alt="#">
+                        </picture>
+                        
                     </div>
             
                 </div>
 
                 <div class="swiper-buttons">
-                    <div class="button-next"></div>
-                    <div class="button-prev"></div>
+                    <div class="button-n">&#10094;</div>
+                    <div class="button-p">&#10095;</div>
                 </div>
 
                 </div>
-                <!-- tablet-hero-text -->
-                <p class="tabl-hero-text">
-                    Our watches are not just timepieces, but also an expression of
-                    your personality and lifestyle. From classic designs to
-                    modern ones, we have a watch to suit every taste and occasion.
-                </p>
+
             </div>
 
             <p class="hero-text">
@@ -101,8 +127,8 @@
                 enabled: true,
             },
             navigation: {
-                prevEl: ".button-prev",
-                nextEl: ".button-next",
+                prevEl: ".button-p",
+                nextEl: ".button-n",
                 
             },
         });
