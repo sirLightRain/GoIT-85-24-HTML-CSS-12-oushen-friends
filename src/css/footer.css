@@ -53,7 +53,7 @@
 }
 
 .footer-adress-link{
-    transition: color var(--color-for-animation);
+    transition: color var(--transition-var);
     display: block;
 }
 
@@ -90,9 +90,7 @@
 
 .footer-navigation-link:hover,
 .footer-navigation-link:focus {
-    /* transform: scale(1.25); */
     color: var(--color-for-animation);
-    
 }
 
 /* === Блок соціальних мереж === */
